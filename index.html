@@ -8,44 +8,65 @@
     <title>Frameworks SCSS</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<header>
-    <nav>
-        <ul>
-            <li><a href="">
-                    <h2>Qui je suis ?</h2>
-                </a></li>
-        </ul>
-        <ul>
-            <li><a href="">
-                    <h2>Mes compétences</h2>
-                </a></li>
-        </ul>
-        <ul>
-            <li><a href="">
-                    <h2>Mon parcours</h2>
-                </a></li>
-        </ul>
-        <ul>
-            <li><a href="">
-                    <h2>Mes projets</h2>
-                </a></li>
-        </ul>
-        <ul>
-            <li><a href="">
-                    <h2>Mes expériences</h2>
-                </a></li>
-        </ul>
-        <ul>
-            <li><a href="">
-                    <h2>Contact</h2>
-                </a></li>
-        </ul>
-    </nav>
-</header>
 
 <body>
-    helloworl
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">
+                        <img src="" alt="no found">
+                    </a></li>
+            </ul>
+            <ul>
+                <li><a href="">
+                        <h3>Qui je suis ?</h3>
+                    </a></li>
+            </ul>
+            <ul>
+                <li><a href="">
+                        <h3>Mes compétences</h3>
+                    </a></li>
+            </ul>
+            <ul>
+                <li><a href="">
+                        <h3>Mon parcours</h3>
+                    </a></li>
+            </ul>
+            <ul>
+                <li><a href="">
+                        <h3>Mes projets</h3>
+                    </a></li>
+            </ul>
+            <ul>
+                <li><a href="">
+                        <h3>Mes expériences</h3>
+                    </a></li>
+            </ul>
+            <ul>
+                <li><a href="">
+                        <h3>Contact</h3>
+                    </a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <img src="img/moon.png" id="moon">
+        <img src="img/mountains_behind.png" id="mountains_behind">
+        <img src="img/mountains_front.png" id="mountains_front">
+        <img src="img/stars.png" id="stars">
+    </section>
+
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
 
 </body>
+<script type="text/javascript">
+    let progress = document.getElementById('progressbar');
+    let totalHeight = document.body.scrollHeight - window.innerHeight;
+    window.onscroll = function () {
+        let progressHeight = (window.pageYOffset / totalHeight) * 100;
+        progress.style.height = progressHeight + "%";
+    }
+</script>
 
 </html>

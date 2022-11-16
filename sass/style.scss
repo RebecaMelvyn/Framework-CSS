@@ -5,9 +5,55 @@ $orange: #F49E4C;
 $red: #AB3428;
 
 body{
-    background-color: $blueClean;
+    background: linear-gradient($blueDark, $blueClean, $yellow);
+    margin: 0;
+    height: 200vh;
 }
 
 nav{
+
     background-color: $yellow;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+
+    ul{
+        margin: 0;
+        display: inline-block;
+        list-style-type: none;
+    }
+    a{
+        text-decoration: none;
+    }
+
+    h3{
+        margin: 0;
+        color: $blueDark;
+    }
+    h3:hover{
+        color: $orange;
+    }
 }
+::-webkit-scrollbar{
+    width: 0;
+}
+@mixin scroolbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    height: 100%;
+}
+#scrollPath{
+    @include scroolbar();
+    background: rgba(255,255,255,0.05);
+}
+#progressbar{
+    @include scroolbar();
+    background: linear-gradient(to top, $red, $orange, $yellow, $blueClean, $blueDark);
+    
+}
+
+
