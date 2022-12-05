@@ -7,66 +7,456 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frameworks SCSS</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/9ae6f87008.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
+        <button id="night">
+            <span style="color: #fff;">
+                <i id="moon_icon_lock" class="fa-solid fa-moon fa-2xl"></i>
+                <i id="moon_icon_unlock" class="fa-regular fa-moon fa-2xl"></i>
+            </span>
+        </button>
+        <button id="day">
+            <span style="color: #fff;">
+                <i id="sun_icon_lock" class="fa-solid fa-sun fa-2xl"></i>
+                <i id="sun_icon_unlock" class="fa-regular fa-sun fa-2xl"></i>
+            </span>
+        </button>
+        <a class="logo" href="#">Logo<img src="" alt=""></a>
+        </div>
         <nav>
             <ul>
-                <li><a href="">
-                        <img src="" alt="no found">
-                    </a></li>
-            </ul>
-            <ul>
-                <li><a href="">
-                        <h3>Qui je suis ?</h3>
-                    </a></li>
-            </ul>
-            <ul>
-                <li><a href="">
-                        <h3>Mes compétences</h3>
-                    </a></li>
-            </ul>
-            <ul>
-                <li><a href="">
-                        <h3>Mon parcours</h3>
-                    </a></li>
-            </ul>
-            <ul>
-                <li><a href="">
-                        <h3>Mes projets</h3>
-                    </a></li>
-            </ul>
-            <ul>
-                <li><a href="">
-                        <h3>Mes expériences</h3>
-                    </a></li>
-            </ul>
-            <ul>
-                <li><a href="">
-                        <h3>Contact</h3>
-                    </a></li>
+                <li><a href="#1">Qui je suis ?</a></li>
+                <li><a href="#2">Mes compétences</a></li>
+                <li><a href="#">Mon parcours</a></li>
+                <li><a href="#">Mes projets</a></li>
+                <li><a href="#">Mes expériences</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <section>
-        <img src="img/moon.png" id="moon">
-        <img src="img/mountains_behind.png" id="mountains_behind">
-        <img src="img/mountains_front.png" id="mountains_front">
-        <img src="img/stars.png" id="stars">
-    </section>
+    <div id="content_loader">
+        <div id="loader">
+            <span style="--i:1;"></span>
+            <span style="--i:2;"></span>
+            <span style="--i:3;"></span>
+            <span style="--i:4;"></span>
+            <span style="--i:5;"></span>
+            <span style="--i:6;"></span>
+            <span style="--i:7;"></span>
+            <span style="--i:8;"></span>
+            <span style="--i:9;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:18;"></span>//
+            <span style="--i:19;"></span>
+            <span style="--i:20;"></span>
+        </div>
+    </div>
 
-    <div id="progressbar"></div>
-    <div id="scrollPath"></div>
+    <div id="page">
+        <section>
+            <img src="img/stars.png" id="stars">
+            <img src="img/cloud1.png" id="cloud1">
+            <img src="img/cloud2.png" id="cloud2">
 
+            <img src="img/moon.png" id="moon">
+            <img src="img/sun.png" id="sun">
+            <img src="img/mountains_behind.png" id="mountains_behind">
+            <h1 id="text">MELVYN REBECA</h1>
+            <a href="#1" id="btn">Découvrir</a>
+            <img src="img/mountains_front.png" id="mountains_front">
+        </section>
+
+        <div class="sec">
+            <h2 style="text-align: center;margin-bottom: 5%" id="1">Qui je suis ?</h2>
+            <div style="display: inline-flex;">
+                <img style="margin-right: 5%;" src="img/png_melvyn.png" id="melvyn">
+                <p style="margin-top:8%; margin-right:5%; text-align: center;">Hello ! Je m'appelle Melvyn REBECA, j'ai
+                    20 ans, et je suis
+                    actuellement développeur web junior en troisième année de bachelor développement web full-stack chez
+                    MyDigitalSchool à Lyon.<br /><br />
+
+                    Je vous présente mon portfolio qui retrace mon parcours professionnel.<br />
+                    Au fil de mes formations et de mes expériences, je me suis spécialisé dans le domaine du
+                    développement web, du marketing digital ainsi que du réseau.<br /><br />
+
+                    Je vous invite à consulter le panel non exhaustif de mes compétences ci-dessous.</p>
+            </div>
+        </div>
+
+        <h2 id="2" style="font-size: 3rem; margin-top: 5%; margin-bottom:5%; text-align:center;">Mes compétences</h2>
+        <div id="contain-comp">
+            <div class="comp" style="--clr:#f9a22f">
+                <img style="width: 100px;" src="img/html.png">
+                <div class="content_master">
+                    <h3 style="text-align:center;">HTML</h3>
+                    <div class="master">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="comp" style="--clr:#2b81f2">
+                <img style="width: 100px;" src="img/css.png">
+                <div class="content_master">
+                    <h3 style="text-align:center;">CSS</h3>
+                    <div class="master">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="comp" style="--clr:#F3DC0D">
+                <img style="width: 100px;" src="img/js.png">
+                <div class="content_master">
+                    <h3 style="text-align:center;">JavaScript</h3>
+                    <div class="master">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="comp" style="--clr:#533D95">
+                <img style="width: 100px;" src="img/php_no.png">
+                <div class="content_master">
+                    <h3 style="text-align:center;">PHP</h3>
+                    <div class="master">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="comp" style="--clr:#E14D24">
+                <img style="width: 100px;" src="img/laravel.png">
+                <div class="content_master">
+                    <h3 style="text-align:center;">Laravel</h3>
+                    <div class="master">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="comp" style="--clr:#B0561A">
+                <img style="width: 100px;" src="img/git.png">
+                <div class="content_master">
+                    <h3 style="text-align:center;">GIT</h3>
+                    <div class="master">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="comp" style="--clr:#21283D">
+                <img style="width: 100px;" src="img/github.png">
+                <div class="content_master">
+                    <h3 style="text-align:center;">GitHub</h3>
+                    <div class="master">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="comp" style="--clr:#1440BA">
+                <img style="width: 100px;" src="img/ts.png">
+                <div class="content_master">
+                    <h3 style="text-align:center;">TypeScript</h3>
+                    <div class="master">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="comp" style="--clr:#EBB028">
+                <img style="width: 100px;" src="img/mysql.png">
+                <div class="content_master">
+                    <h3 style="text-align:center;">MySQL</h3>
+                    <div class="master">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="comp" style="--clr:#DA1929">
+                <img style="width: 100px;" src="img/angular.png">
+                <div class="content_master">
+                    <h3 style="text-align:center;">Angular</h3>
+                    <div class="master">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="comp" style="--clr:#9D1F6D">
+                <img style="width: 100px;" src="img/sass.png">
+                <div class="content_master">
+                    <h3 style="text-align:center;">SASS</h3>
+                    <div class="master">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="comp" style="--clr:#246C26">
+                <img style="width: 100px;" src="img/vuejs.png">
+                <div class="content_master">
+                    <h3 style="text-align:center;">VueJs</h3>
+                    <div class="master">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="comp" style="--clr:#2b81f2">
+                <img style="width: 100px;" src="img/jquery.png">
+                <div class="content_master">
+                    <h3 style="text-align:center;">Jquery</h3>
+                    <div class="master">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="comp" style="--clr:#2b81f2">
+                <img style="width: 100px;" src="img/linux.png">
+                <div class="content_master">
+                    <h3 style="text-align:center;">Linux/Bash</h3>
+                    <div class="master">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="comp" style="--clr:#2b81f2">
+                <img style="width: 100px;" src="img/wordpress.png">
+                <div class="content_master">
+                    <h3 style="text-align:center;">WordPress</h3>
+                    <div class="master">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <h2 id="3" style="font-size: 3rem; margin-top: 10%; text-align:center; margin-bottom: 10%;">Mon
+        parcours</h2>
+    <div id="content-parcour">
+        <div id="frise"></div>
+        <div class="event-parcour-un">
+            <h3>2017</h3>
+            <h3>Entrée au lycée Bac Pro Système Numérique</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quae fuga praesentium facilis
+                dignissimos! Minus doloribus eos consectetur. Similique quam iusto tempora repudiandae! Ducimus
+                nostrum nobis porro asperiores dicta assumenda!</p>
+        </div>
+        <div class="event-parcour-deux">
+            <h3>2017</h3>
+            <h3>Stage chez Halles PC</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quae fuga praesentium facilis
+                dignissimos! Minus doloribus eos consectetur. Similique quam iusto tempora repudiandae! Ducimus
+                nostrum nobis porro asperiores dicta assumenda!</p>
+        </div>
+    </div>
+
+    <div id="bloc" style="background:#f00; height:600px"></div>
+    <div id="skil" style="display:inline-flex;">
+        <div class="card">
+            <div class="circle" style="--clr:#f9a22f">
+                <img src="img/html.png" class="logo-skil">
+            </div>
+            <div class="content">
+                <h3>HTML</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quae fuga praesentium facilis
+                    dignissimos! Minus doloribus eos consectetur. Similique quam iusto tempora repudiandae! Ducimus
+                    nostrum nobis porro asperiores dicta assumenda!</p>
+            </div>
+            <img src="img/html_notext.png" class="skil-img">
+        </div>
+        <div class="card">
+            <div class="circle" style="--clr:#2b81f2">
+                <img src="img/css.png" class="logo-skil">
+            </div>
+            <div class="content">
+                <h3>CSS</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quae fuga praesentium facilis
+                    dignissimos! Minus doloribus eos consectetur. Similique quam iusto tempora repudiandae! Ducimus
+                    nostrum nobis porro asperiores dicta assumenda!</p>
+            </div>
+            <img src="img/css.png" class="skil-img">
+        </div>
+        <div class="card">
+            <div class="circle" style="--clr:#eae436">
+                <img src="img/js.png" class="logo-skil">
+            </div>
+            <div class="content">
+                <h3>JavaScript</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quae fuga praesentium facilis
+                    dignissimos! Minus doloribus eos consectetur. Similique quam iusto tempora repudiandae! Ducimus
+                    nostrum nobis porro asperiores dicta assumenda!</p>
+            </div>
+            <img src="img/js_notext.png" class="skil-img">
+        </div>
+        <div class="card">
+            <div class="circle" style="--clr:#eae436">
+                <img src="img/php.png" class="logo-skil">
+            </div>
+            <div class="content">
+                <h3>JavaScript</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quae fuga praesentium facilis
+                    dignissimos! Minus doloribus eos consectetur. Similique quam iusto tempora repudiandae! Ducimus
+                    nostrum nobis porro asperiores dicta assumenda!</p>
+            </div>
+            <img src="img/php_no.png" class="skil-img">
+        </div>
+    </div>
+
+    </div>
+    <div id="bloc" style="background:#f00; height:600px"></div>
 </body>
 <script type="text/javascript">
-    let progress = document.getElementById('progressbar');
-    let totalHeight = document.body.scrollHeight - window.innerHeight;
-    window.onscroll = function () {
-        let progressHeight = (window.pageYOffset / totalHeight) * 100;
-        progress.style.height = progressHeight + "%";
-    }
+
+    let body = document.querySelector('body');
+    let head = document.querySelector('header');
+    let content_loader = document.getElementById('content_loader');
+    let loader = document.getElementById('loader');
+    let page = document.getElementById('page');
+
+    head.style.display = "none";
+    page.style.display = "none";
+    body.style.height = "100vh";
+
+    window.addEventListener("load", function () {
+        content_loader.style.display = "none";
+        head.style.display = "flex";
+        page.style.display = "block";
+        body.style.height = "auto";
+    })
+
+    let stars = document.getElementById('stars');
+    let cloud1 = document.getElementById('cloud1');
+    let cloud2 = document.getElementById('cloud2');
+    let moon = document.getElementById('moon');
+    let sun = document.getElementById('sun');
+    let mountains_behind = document.getElementById('mountains_behind');
+    let text = document.getElementById('text');
+    let btn = document.getElementById('btn');
+    let mountains_front = document.getElementById('mountains_front');
+    let header = document.querySelector('header');
+    let theme = document.getElementById('theme');
+
+
+    sun.style.display = "none";
+    sun.style.marginTop = "7%";
+
+    cloud1.style.display = "none";
+    cloud2.style.display = "none";
+
+    $('#day').click(function day() {
+        $('#moon').css({
+            'display': 'none'
+        });
+        $('#sun').css({
+            'display': 'block'
+        });
+        $('section').css({
+            'background': 'linear-gradient(#3B8EA5,#1bccdd )'
+        });
+        $('#stars').css({
+            'display': 'none'
+        });
+        $('#cloud1').css({
+            'display': 'block',
+            'margin-top': '5%'
+        });
+        $('#cloud2').css({
+            'display': 'block',
+            'margin-top': '5%'
+        });
+    });
+    $('#night').click(function night() {
+        $('#sun').css({
+            'display': 'none'
+        });
+        $('#moon').css({
+            'display': 'block'
+        });
+
+        $('section').css({
+            'background': 'linear-gradient(#2b1055, #7597de)'
+        });
+        $('#stars').css({
+            'display': 'block'
+        });
+        $('#cloud1').css({
+            'display': 'none'
+        });
+        $('#cloud2').css({
+            'display': 'none'
+        });
+    });
+    window.addEventListener("load", scroll, false);
+    window.addEventListener("resize", scroll, false);
+
+    window.addEventListener('scroll', function () {
+        let value = window.scrollY;
+        stars.style.left = value * 0.2 + "px";
+        cloud1.style.top = value * 0.5 + "px";
+        cloud1.style.marginLeft = value * 0.5 + "px";
+        cloud2.style.top = value * 0.5 + "px";
+        cloud2.style.marginLeft = value * 0.5 + "px";
+        moon.style.top = value * 1.05 + "px";
+        sun.style.top = value * 1.05 + "px";
+
+        mountains_behind.style.top = value * 0.3 + "px";
+        mountains_front.style.bottom = value * 0.2 + "px";
+        text.style.marginRight = value * 4 + "px";
+        text.style.marginTop = value * 1 + "px";
+        btn.style.marginTop = value * 1 + "px";
+
+
+    })
 </script>
 
 </html>
