@@ -13,28 +13,31 @@
 
 <body>
     <header>
-        <button id="night">
-            <span style="color: #fff;">
-                <i id="moon_icon_lock" class="fa-solid fa-moon fa-2xl"></i>
-                <i id="moon_icon_unlock" class="fa-regular fa-moon fa-2xl"></i>
-            </span>
-        </button>
-        <button id="day">
-            <span style="color: #fff;">
-                <i id="sun_icon_lock" class="fa-solid fa-sun fa-2xl"></i>
-                <i id="sun_icon_unlock" class="fa-regular fa-sun fa-2xl"></i>
-            </span>
-        </button>
-        <a class="logo" href="#">Logo<img src="" alt=""></a>
-        </div>
+        <a class="logo" href="#"><img id="logoM" src="img/M.png" alt=""></a>
         <nav>
             <ul>
                 <li><a href="#1">Qui je suis ?</a></li>
                 <li><a href="#2">Mes compétences</a></li>
-                <li><a href="#">Mon parcours</a></li>
+                <li><a href="#3">Mon parcours</a></li>
                 <li><a href="#">Mes projets</a></li>
                 <li><a href="#">Mes expériences</a></li>
                 <li><a href="#">Contact</a></li>
+                <li>
+                    <button id="night">
+                        <span style="color: #fff;">
+                            <i id="moon_icon_lock" class="fa-solid fa-moon fa-2xl"></i>
+                            <i id="moon_icon_unlock" class="fa-regular fa-moon fa-2xl"></i>
+                        </span>
+                    </button>
+                </li>
+                <li>
+                    <button id="day">
+                        <span style="color: #fff;">
+                            <i id="sun_icon_lock" class="fa-solid fa-sun fa-2xl"></i>
+                            <i id="sun_icon_unlock" class="fa-regular fa-sun fa-2xl"></i>
+                        </span>
+                    </button>
+                </li>
             </ul>
         </nav>
     </header>
@@ -57,7 +60,7 @@
             <span style="--i:15;"></span>
             <span style="--i:16;"></span>
             <span style="--i:17;"></span>
-            <span style="--i:18;"></span>//
+            <span style="--i:18;"></span>
             <span style="--i:19;"></span>
             <span style="--i:20;"></span>
         </div>
@@ -72,12 +75,12 @@
             <img src="img/moon.png" id="moon">
             <img src="img/sun.png" id="sun">
             <img src="img/mountains_behind.png" id="mountains_behind">
-            <h1 id="text">MELVYN REBECA</h1>
+            <h1 id="text">Développeur web</h1>
             <a href="#1" id="btn">Découvrir</a>
             <img src="img/mountains_front.png" id="mountains_front">
         </section>
 
-        <div class="sec">
+        <div style="padding-bottom: 10%;" class="sec">
             <h2 style="text-align: center;margin-bottom: 5%" id="1">Qui je suis ?</h2>
             <div style="display: inline-flex;">
                 <img style="margin-right: 5%;" src="img/png_melvyn.png" id="melvyn">
@@ -93,267 +96,412 @@
                     Je vous invite à consulter le panel non exhaustif de mes compétences ci-dessous.</p>
             </div>
         </div>
+        <div style="padding-top: 5%; text-align: center;">
 
-        <h2 id="2" style="font-size: 3rem; margin-top: 5%; margin-bottom:5%; text-align:center;">Mes compétences</h2>
+            <i class="fa-solid fa-graduation-cap fa-7x"></i>
+
+            <h2 id="2" style="font-size: 3rem; margin-top: 2%; margin-bottom:3%; text-align:center;">Mes compétences
+            </h2>
+        </div>
         <div id="contain-comp">
             <div class="comp" style="--clr:#f9a22f">
                 <img style="width: 100px;" src="img/html.png">
                 <div class="content_master">
-                    <h3 style="text-align:center;">HTML</h3>
+                    <h3 style="text-align:center; color: #fff;">HTML</h3>
                     <div class="master">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
+                        <span style="color: #fff;">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
                     </div>
                 </div>
             </div>
             <div class="comp" style="--clr:#2b81f2">
                 <img style="width: 100px;" src="img/css.png">
                 <div class="content_master">
-                    <h3 style="text-align:center;">CSS</h3>
+                    <h3 style="text-align:center; color: #fff;">CSS</h3>
                     <div class="master">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
+                        <span style="color: #fff;">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
                     </div>
                 </div>
             </div>
-            <div class="comp" style="--clr:#F3DC0D">
+            <div class="comp" style="--clr:#C6B310">
                 <img style="width: 100px;" src="img/js.png">
                 <div class="content_master">
-                    <h3 style="text-align:center;">JavaScript</h3>
+                    <h3 style="text-align:center; color: #fff;">JavaScript</h3>
                     <div class="master">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                        <span style="color: #fff;">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </span>
                     </div>
                 </div>
             </div>
             <div class="comp" style="--clr:#533D95">
                 <img style="width: 100px;" src="img/php_no.png">
                 <div class="content_master">
-                    <h3 style="text-align:center;">PHP</h3>
+                    <h3 style="text-align:center; color: #fff;">PHP</h3>
                     <div class="master">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                        <span style="color: #fff;">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </span>
                     </div>
                 </div>
             </div>
-            <div class="comp" style="--clr:#E14D24">
+            <div class="comp" style="--clr:#B13E0C">
                 <img style="width: 100px;" src="img/laravel.png">
                 <div class="content_master">
-                    <h3 style="text-align:center;">Laravel</h3>
+                    <h3 style="text-align:center; color: #fff;">Laravel</h3>
                     <div class="master">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                        <span style="color: #fff;">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </span>
                     </div>
                 </div>
             </div>
             <div class="comp" style="--clr:#B0561A">
                 <img style="width: 100px;" src="img/git.png">
                 <div class="content_master">
-                    <h3 style="text-align:center;">GIT</h3>
+                    <h3 style="text-align:center; color: #fff;">GIT</h3>
                     <div class="master">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                        <span style="color: #fff;">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </span>
                     </div>
                 </div>
             </div>
             <div class="comp" style="--clr:#21283D">
                 <img style="width: 100px;" src="img/github.png">
                 <div class="content_master">
-                    <h3 style="text-align:center;">GitHub</h3>
+                    <h3 style="text-align:center; color: #fff;">GitHub</h3>
                     <div class="master">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                        <span style="color: #fff;">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </span>
                     </div>
                 </div>
             </div>
             <div class="comp" style="--clr:#1440BA">
                 <img style="width: 100px;" src="img/ts.png">
                 <div class="content_master">
-                    <h3 style="text-align:center;">TypeScript</h3>
+                    <h3 style="text-align:center; color: #fff;">TypeScript</h3>
                     <div class="master">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                        <span style="color: #fff;">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </span>
                     </div>
                 </div>
             </div>
             <div class="comp" style="--clr:#EBB028">
                 <img style="width: 100px;" src="img/mysql.png">
                 <div class="content_master">
-                    <h3 style="text-align:center;">MySQL</h3>
+                    <h3 style="text-align:center; color: #fff;">MySQL</h3>
                     <div class="master">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                        <span style="color: #fff;">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </span>
                     </div>
                 </div>
             </div>
             <div class="comp" style="--clr:#DA1929">
                 <img style="width: 100px;" src="img/angular.png">
                 <div class="content_master">
-                    <h3 style="text-align:center;">Angular</h3>
+                    <h3 style="text-align:center; color: #fff;">Angular</h3>
                     <div class="master">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                        <span style="color: #fff;">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </span>
                     </div>
                 </div>
             </div>
             <div class="comp" style="--clr:#9D1F6D">
                 <img style="width: 100px;" src="img/sass.png">
                 <div class="content_master">
-                    <h3 style="text-align:center;">SASS</h3>
+                    <h3 style="text-align:center; color: #fff;">SASS</h3>
                     <div class="master">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                        <span style="color: #fff;">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </span>
                     </div>
                 </div>
             </div>
             <div class="comp" style="--clr:#246C26">
                 <img style="width: 100px;" src="img/vuejs.png">
                 <div class="content_master">
-                    <h3 style="text-align:center;">VueJs</h3>
+                    <h3 style="text-align:center; color: #fff;">VueJs</h3>
                     <div class="master">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                        <span style="color: #fff;">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </span>
                     </div>
                 </div>
             </div>
             <div class="comp" style="--clr:#2b81f2">
                 <img style="width: 100px;" src="img/jquery.png">
                 <div class="content_master">
-                    <h3 style="text-align:center;">Jquery</h3>
+                    <h3 style="text-align:center; color: #fff;">Jquery</h3>
                     <div class="master">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                        <span style="color: #fff;">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </span>
                     </div>
                 </div>
             </div>
-            <div class="comp" style="--clr:#2b81f2">
+            <div class="comp" style="--clr:#871975">
                 <img style="width: 100px;" src="img/linux.png">
                 <div class="content_master">
-                    <h3 style="text-align:center;">Linux/Bash</h3>
+                    <h3 style="text-align:center; color: #fff;">Linux/Bash</h3>
                     <div class="master">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                        <span style="color: #fff;">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </span>
                     </div>
                 </div>
             </div>
             <div class="comp" style="--clr:#2b81f2">
                 <img style="width: 100px;" src="img/wordpress.png">
                 <div class="content_master">
-                    <h3 style="text-align:center;">WordPress</h3>
+                    <h3 style="text-align:center; color: #fff;">WordPress</h3>
                     <div class="master">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                        <span style="color: #fff;">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="comp" style="--clr:#3B6538">
+                <img style="width: 100px;" src="img/nodejs.png">
+                <div class="content_master">
+                    <h3 style="text-align:center; color: #fff;">NodeJs</h3>
+                    <div class="master">
+                        <span style="color: #fff;">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="comp" style="--clr:#691414">
+                <img style="width: 100px;" src="img/p5js.png">
+                <div class="content_master">
+                    <h3 style="text-align:center; color: #fff;">P5.js</h3>
+                    <div class="master">
+                        <span style="color: #fff;">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="comp" style="--clr:#950000">
+                <img style="width: 100px;" src="img/adobe.png">
+                <div class="content_master">
+                    <h3 style="text-align:center; color: #fff;">Adobe</h3>
+                    <div class="master">
+                        <span style="color: #fff;">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="comp" style="--clr:#DDDADA">
+                <img style="width: 100px;" src="img/filezilla.png">
+                <div class="content_master">
+                    <h3 style="text-align:center; color: #fff;">Filezilla</h3>
+                    <div class="master">
+                        <span style="color: #fff;">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="comp" style="--clr:#DDAF30">
+                <img style="width: 100px;" src="img/seo.png">
+                <div class="content_master">
+                    <h3 style="text-align:center; color: #fff;">SEO</h3>
+                    <div class="master">
+                        <span style="color: #fff;">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </span>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
 
-    <h2 id="3" style="font-size: 3rem; margin-top: 10%; text-align:center; margin-bottom: 10%;">Mon
-        parcours</h2>
-    <div id="content-parcour">
-        <div id="frise"></div>
-        <div class="event-parcour-un">
-            <h3>2017</h3>
-            <h3>Entrée au lycée Bac Pro Système Numérique</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quae fuga praesentium facilis
-                dignissimos! Minus doloribus eos consectetur. Similique quam iusto tempora repudiandae! Ducimus
-                nostrum nobis porro asperiores dicta assumenda!</p>
-        </div>
-        <div class="event-parcour-deux">
-            <h3>2017</h3>
-            <h3>Stage chez Halles PC</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quae fuga praesentium facilis
-                dignissimos! Minus doloribus eos consectetur. Similique quam iusto tempora repudiandae! Ducimus
-                nostrum nobis porro asperiores dicta assumenda!</p>
-        </div>
-    </div>
+        <div class="parcour">
 
-    <div id="bloc" style="background:#f00; height:600px"></div>
-    <div id="skil" style="display:inline-flex;">
-        <div class="card">
-            <div class="circle" style="--clr:#f9a22f">
-                <img src="img/html.png" class="logo-skil">
-            </div>
-            <div class="content">
-                <h3>HTML</h3>
+            <h2 id="3" style="font-size: 3rem; margin-top: 10%; text-align:center; margin-bottom: 15%;">Mon
+                parcours</h2>
+
+            <div class="eventUn">
+                <h3>2017 - 2020</h3>
+                <h3>Entrée au lycée Bac Pro Système Numérique</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quae fuga praesentium facilis
                     dignissimos! Minus doloribus eos consectetur. Similique quam iusto tempora repudiandae! Ducimus
                     nostrum nobis porro asperiores dicta assumenda!</p>
             </div>
-            <img src="img/html_notext.png" class="skil-img">
-        </div>
-        <div class="card">
-            <div class="circle" style="--clr:#2b81f2">
-                <img src="img/css.png" class="logo-skil">
+            <div class="cube a">
+                <div class="top"></div>
+                <div>
+                    <span style="--i:0">
+                        <h1>Bac pro Système Numérique</h1>
+                    </span>
+                    <span style="--i:1">
+                        <h1>Bac pro Système Numérique</h1>
+                    </span>
+                    <span style="--i:2">
+                        <h1>Bac pro Système Numérique</h1>
+                    </span>
+                    <span style="--i:3">
+                        <h1>Bac pro Système Numérique</h1>
+                    </span>
+                </div>
             </div>
-            <div class="content">
-                <h3>CSS</h3>
+            <div style="height: 300px;"></div>
+            <div class="eventDeux">
+                <h3>2020 - 2023</h3>
+                <h3>Bachelor développeur web full-stack</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quae fuga praesentium facilis
                     dignissimos! Minus doloribus eos consectetur. Similique quam iusto tempora repudiandae! Ducimus
                     nostrum nobis porro asperiores dicta assumenda!</p>
             </div>
-            <img src="img/css.png" class="skil-img">
+            <div class="cube b">
+                <div class="top"></div>
+                <div>
+                    <span style="--i:0">
+                        <h1>Bachelor développeur web full-stack</h1>
+                    </span>
+                    <span style="--i:1">
+                        <h1>Bachelor développeur web full-stack</h1>
+                    </span>
+                    <span style="--i:2">
+                        <h1>Bachelor développeur web full-stack</h1>
+                    </span>
+                    <span style="--i:3">
+                        <h1>Bachelor développeur web full-stack</h1>
+                    </span>
+                </div>
+            </div>
+
         </div>
-        <div class="card">
-            <div class="circle" style="--clr:#eae436">
-                <img src="img/js.png" class="logo-skil">
-            </div>
-            <div class="content">
-                <h3>JavaScript</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quae fuga praesentium facilis
-                    dignissimos! Minus doloribus eos consectetur. Similique quam iusto tempora repudiandae! Ducimus
-                    nostrum nobis porro asperiores dicta assumenda!</p>
-            </div>
-            <img src="img/js_notext.png" class="skil-img">
+
+        <div class="projectPage">
+            <h2 id="3" style="font-size: 3rem; margin-top: 10%; text-align:center; margin-bottom: 15%;">Mes Projets</h2>
         </div>
-        <div class="card">
-            <div class="circle" style="--clr:#eae436">
-                <img src="img/php.png" class="logo-skil">
+
+
+        <div id="skil" style="display:inline-flex;">
+            <div class="card">
+                <div class="circle" style="--clr:#f9a22f">
+                    <img src="img/html.png" class="logo-skil">
+                </div>
+                <div class="content">
+                    <h3>HTML</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quae fuga praesentium facilis
+                        dignissimos! Minus doloribus eos consectetur. Similique quam iusto tempora repudiandae! Ducimus
+                        nostrum nobis porro asperiores dicta assumenda!</p>
+                </div>
+                <img src="img/html_notext.png" class="skil-img">
             </div>
-            <div class="content">
-                <h3>JavaScript</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quae fuga praesentium facilis
-                    dignissimos! Minus doloribus eos consectetur. Similique quam iusto tempora repudiandae! Ducimus
-                    nostrum nobis porro asperiores dicta assumenda!</p>
+            <div class="card">
+                <div class="circle" style="--clr:#2b81f2">
+                    <img src="img/css.png" class="logo-skil">
+                </div>
+                <div class="content">
+                    <h3>CSS</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quae fuga praesentium facilis
+                        dignissimos! Minus doloribus eos consectetur. Similique quam iusto tempora repudiandae! Ducimus
+                        nostrum nobis porro asperiores dicta assumenda!</p>
+                </div>
+                <img src="img/css.png" class="skil-img">
             </div>
-            <img src="img/php_no.png" class="skil-img">
+            <div class="card">
+                <div class="circle" style="--clr:#eae436">
+                    <img src="img/js.png" class="logo-skil">
+                </div>
+                <div class="content">
+                    <h3>JavaScript</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quae fuga praesentium facilis
+                        dignissimos! Minus doloribus eos consectetur. Similique quam iusto tempora repudiandae! Ducimus
+                        nostrum nobis porro asperiores dicta assumenda!</p>
+                </div>
+                <img src="img/js_notext.png" class="skil-img">
+            </div>
+            <div class="card">
+                <div class="circle" style="--clr:#eae436">
+                    <img src="img/php.png" class="logo-skil">
+                </div>
+                <div class="content">
+                    <h3>JavaScript</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quae fuga praesentium facilis
+                        dignissimos! Minus doloribus eos consectetur. Similique quam iusto tempora repudiandae! Ducimus
+                        nostrum nobis porro asperiores dicta assumenda!</p>
+                </div>
+                <img src="img/php_no.png" class="skil-img">
+            </div>
         </div>
     </div>
 
-    </div>
-    <div id="bloc" style="background:#f00; height:600px"></div>
+
 </body>
 <script type="text/javascript">
 

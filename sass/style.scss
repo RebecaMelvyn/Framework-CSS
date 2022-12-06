@@ -36,9 +36,19 @@ header{
         color: $white;
         font-weight: 700;
         text-decoration: none;
-        font-size: 2em;
         text-transform: uppercase;
         letter-spacing: 2px;
+
+        #logoM{
+            width: 25%;
+            background: #fff;
+            border-radius: 50%;
+            padding: 5%;
+            position: relative;
+            top: 20px;  
+            left: 0;
+            
+        }
     }
     @mixin button_theme {
         background-color: transparent;
@@ -299,9 +309,13 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
+
+    i{
+        color: #fff;
+    }
 }
 .content_master{
-    margin-top: 10%;
+    margin-top: 2%;
     transform: scale(0);
     transition-duration: 0.5s;
 }
@@ -311,37 +325,115 @@ section{
     transform: scale(1);
 }
 
-
-#frise{
-    width: 200px;
-    height: 2000px;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background-color: $orange;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    border-bottom-left-radius: 100%;
-    border-bottom-right-radius: 100%;
-}
-#content-parcour{
-    background-color: $red;
+.parcour{
+    background: black; 
     color: #fff;
+    padding-top: 5px;
+    margin-top: 5%;
+    padding-bottom: 10%;
 
-    .event-parcour-un{
-       position: absolute;
-    top: 470%;
-    left: 10%;
-    width: 25%; 
-    }
-    .event-parcour-deux{
+}
+
+.eventUn{
+    width: 50%;
+    margin-bottom: -15%;
+    position: relative;
+    left: 45%;
+}
+.eventDeux{
+    width: 50%;
+    margin-bottom: -15%;
+    position: relative;
+    left: 5%;
+}
+
+@mixin cubeSize {
+    
+    position: relative;
+    width: 305px;
+    height: 305px;
+    transform-style: preserve-3d;
+    scale: 0.5;
+    transform: translateX(clac(-30deg));
+    animation: rotateCube 4s linear infinite;
+}
+
+.cube{
+    @include cubeSize();
+    
+    div{
         position: absolute;
-    top: 500%;
-    left: 65%;
-    width: 25%;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        text-align: center;
+
+        span{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(#151515, #00d4ec);
+            transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
+
+            h1{
+                margin-top: 30%;
+            }
+        }
+    }
+
+    .top{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 305px;
+        height: 305px;
+        background: #222;
+        transform: rotateX(90deg)translateZ(150px);
+
+    }
+    .top::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 305px;
+        height: 305px;
+        background: #00d4ec;
+        transform: translateZ(-400px);
+        filter: blur(20px);
+        box-shadow: 0 0 120px rgba(0, 255, 255, 0.2),
+        0 0 200px rgba(0,255,255,0.4),
+        0 0 300px rgba(0,255,255,0.6),
+        0 0 40px rgba(0,255,255,0.8),
+        0 0 500px rgba(0,255,255,1);
     }
 }
+.a{
+    left: 10%;
+
+}
+.b{
+    left: 70%;
+    
+}
+
+@keyframes rotateCube {
+    0%{
+        transform: rotateX(-20deg) rotateY(0deg);
+    }
+    100%{
+        transform: rotateX(-20deg) rotateY(360deg);
+
+    }
+    
+}
+
+
+
 
 
 .card{
