@@ -13,14 +13,14 @@
 
 <body>
     <header>
-        <a class="logo" href="#"><img id="logoM" src="img/M.png" alt=""></a>
+        <a class="logo" href=""><img id="logoM" src="img/M.png" alt=""></a>
         <nav>
             <ul>
                 <li><a href="#1">Qui je suis ?</a></li>
                 <li><a href="#2">Mes compétences</a></li>
                 <li><a href="#3">Mon parcours</a></li>
-                <li><a href="#">Mes projets</a></li>
-                <li><a href="#">Mes expériences</a></li>
+                <li><a href="#4">Mes projets</a></li>
+                <li><a href="#5">Mes expériences</a></li>
                 <li><a href="#">Contact</a></li>
                 <li>
                     <button id="night">
@@ -81,7 +81,11 @@
         </section>
 
         <div style="padding-bottom: 10%;" class="sec">
-            <h2 style="text-align: center;margin-bottom: 5%" id="1">Qui je suis ?</h2>
+            <div style="padding-top: 5%; text-align: center; color: #fff;">
+                <i id="1" class="fa-solid fa-person fa-7x"></i>
+                <h2 style="text-align: center;margin-bottom: 5%; margin-top: 2%;">Qui je suis ?</h2>
+            </div>
+
             <div style="display: inline-flex;">
                 <img style="margin-right: 5%;" src="img/png_melvyn.png" id="melvyn">
                 <p style="margin-top:8%; margin-right:5%; text-align: center;">Hello ! Je m'appelle Melvyn REBECA, j'ai
@@ -96,13 +100,13 @@
                     Je vous invite à consulter le panel non exhaustif de mes compétences ci-dessous.</p>
             </div>
         </div>
+
         <div style="padding-top: 5%; text-align: center;">
-
-            <i class="fa-solid fa-graduation-cap fa-7x"></i>
-
-            <h2 id="2" style="font-size: 3rem; margin-top: 2%; margin-bottom:3%; text-align:center;">Mes compétences
+            <i id="2" class="fa-solid fa-wrench fa-7x"></i>
+            <h2 style="font-size: 3rem; margin-top: 2%; margin-bottom:3%; text-align:center;">Mes compétences
             </h2>
         </div>
+
         <div id="contain-comp">
             <div class="comp" style="--clr:#f9a22f">
                 <img style="width: 100px;" src="img/html.png">
@@ -389,8 +393,12 @@
 
         <div class="parcour">
 
-            <h2 id="3" style="font-size: 3rem; margin-top: 10%; text-align:center; margin-bottom: 15%;">Mon
-                parcours</h2>
+            <div style="text-align: center; margin-top: 5%;">
+                <i id="3" class="fa-solid fa-graduation-cap fa-7x"></i>
+
+                <h2 style="font-size: 3rem; margin-top: 2%; text-align:center; margin-bottom: 15%;">Mon
+                    parcours</h2>
+            </div>
 
             <div class="eventUn">
                 <h3>2017 - 2020</h3>
@@ -445,62 +453,75 @@
         </div>
 
         <div class="projectPage">
-            <h2 id="3" style="font-size: 3rem; margin-top: 10%; text-align:center; margin-bottom: 15%;">Mes Projets</h2>
-        </div>
+            <div style="text-align: center; margin-top: 5%;">
+                <i id="4" class="fa-solid fa-folder-open fa-7x"></i>
+                <h2 style="font-size: 3rem; margin-top: 2%; text-align:center; margin-bottom: 5%;">Mes Projets
+                </h2>
+            </div>
 
+            <div id="skil">
+                <div class="projectUn">
+                    <h3>ProjetUn</h3>
+                    <h3>Bachelor développeur web full-stack</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quae fuga praesentium facilis
+                        dignissimos! Minus doloribus eos consectetur. Similique quam iusto tempora repudiandae! Ducimus
+                        nostrum nobis porro asperiores dicta assumenda!</p>
+                </div>
+                <div class="card aCard">
+                    <div class="circle" style="--clr:#f9a22f">
+                        <img src="img/html.png" class="logo-skil">
+                    </div>
+                    <div class="content">
+                        <h3>HTML</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quae fuga praesentium facilis
+                            dignissimos! Minus doloribus eos consectetur. Similique quam iusto tempora repudiandae!
+                            Ducimus
+                            nostrum nobis porro asperiores dicta assumenda!</p>
+                        <button>Tester le projet</button>
+                    </div>
+                    <img src="img/html_notext.png" class="skil-img">
+                </div>
+            </div>
+            <div id="skil">
+                <div class="projectUn">
+                    <h3>ProjetDeux</h3>
+                    <h3>Bachelor développeur web full-stack</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quae fuga praesentium facilis
+                        dignissimos! Minus doloribus eos consectetur. Similique quam iusto tempora repudiandae! Ducimus
+                        nostrum nobis porro asperiores dicta assumenda!</p>
+                </div>
+                <div class="card bCard">
+                    <div class="circle" style="--clr:#2b81f2">
+                        <img src="img/css.png" class="logo-skil">
+                    </div>
+                    <div class="content">
+                        <h3>CSS</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quae fuga praesentium facilis
+                            dignissimos! Minus doloribus eos consectetur. Similique quam iusto tempora repudiandae!
+                            Ducimus
+                            nostrum nobis porro asperiores dicta assumenda!</p>
+                        <button>Tester le projet</button>
+                    </div>
+                    <img src="img/css.png" class="skil-img">
+                </div>
 
-        <div id="skil" style="display:inline-flex;">
-            <div class="card">
-                <div class="circle" style="--clr:#f9a22f">
-                    <img src="img/html.png" class="logo-skil">
-                </div>
-                <div class="content">
-                    <h3>HTML</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quae fuga praesentium facilis
-                        dignissimos! Minus doloribus eos consectetur. Similique quam iusto tempora repudiandae! Ducimus
-                        nostrum nobis porro asperiores dicta assumenda!</p>
-                </div>
-                <img src="img/html_notext.png" class="skil-img">
-            </div>
-            <div class="card">
-                <div class="circle" style="--clr:#2b81f2">
-                    <img src="img/css.png" class="logo-skil">
-                </div>
-                <div class="content">
-                    <h3>CSS</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quae fuga praesentium facilis
-                        dignissimos! Minus doloribus eos consectetur. Similique quam iusto tempora repudiandae! Ducimus
-                        nostrum nobis porro asperiores dicta assumenda!</p>
-                </div>
-                <img src="img/css.png" class="skil-img">
-            </div>
-            <div class="card">
-                <div class="circle" style="--clr:#eae436">
-                    <img src="img/js.png" class="logo-skil">
-                </div>
-                <div class="content">
-                    <h3>JavaScript</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quae fuga praesentium facilis
-                        dignissimos! Minus doloribus eos consectetur. Similique quam iusto tempora repudiandae! Ducimus
-                        nostrum nobis porro asperiores dicta assumenda!</p>
-                </div>
-                <img src="img/js_notext.png" class="skil-img">
-            </div>
-            <div class="card">
-                <div class="circle" style="--clr:#eae436">
-                    <img src="img/php.png" class="logo-skil">
-                </div>
-                <div class="content">
-                    <h3>JavaScript</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quae fuga praesentium facilis
-                        dignissimos! Minus doloribus eos consectetur. Similique quam iusto tempora repudiandae! Ducimus
-                        nostrum nobis porro asperiores dicta assumenda!</p>
-                </div>
-                <img src="img/php_no.png" class="skil-img">
             </div>
         </div>
     </div>
 
+    <div id="expePage" style="padding-top: 5%;margin-top: 10%;">
+        <div style="text-align: center;">
+            <i id="5" class="fa-solid fa-briefcase fa-7x"></i>
+            <h2 style="font-size: 3rem; padding-bottom:10%; text-align:center; margin-bottom: 5%;">Mes
+                expériences</h2>
+        </div>
+
+
+
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
 
 </body>
 <script type="text/javascript">
@@ -605,6 +626,27 @@
 
 
     })
+
+
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.classList.add("show")
+
+        } else {
+            mybutton.classList.remove("show");
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
 </script>
 
 </html>
