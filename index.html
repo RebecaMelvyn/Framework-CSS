@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frameworks SCSS</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/M.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/9ae6f87008.js" crossorigin="anonymous"></script>
 </head>
@@ -23,20 +24,15 @@
                 <li><a href="#5">Mes expériences</a></li>
                 <li><a href="#">Contact</a></li>
                 <li>
-                    <button id="night">
-                        <span style="color: #fff;">
-                            <i id="moon_icon_lock" class="fa-solid fa-moon fa-2xl"></i>
-                            <i id="moon_icon_unlock" class="fa-regular fa-moon fa-2xl"></i>
-                        </span>
-                    </button>
-                </li>
-                <li>
-                    <button id="day">
-                        <span style="color: #fff;">
-                            <i id="sun_icon_lock" class="fa-solid fa-sun fa-2xl"></i>
-                            <i id="sun_icon_unlock" class="fa-regular fa-sun fa-2xl"></i>
-                        </span>
-                    </button>
+                    <div class="contain-theme" id="night day">
+                        <div class="moon moon-logo" style="color: #000;">
+                            <i class="fa-solid fa-moon fa-2xl"></i>
+                        </div>
+                        <div class="sun sun-logo" style="color: #fff;">
+                            <i class="fa-solid fa-sun fa-2xl"></i>
+                        </div>
+
+                    </div>
                 </li>
             </ul>
         </nav>
@@ -68,27 +64,28 @@
 
     <div id="page">
         <section>
-            <img src="img/stars.png" id="stars">
-            <img src="img/cloud1.png" id="cloud1">
-            <img src="img/cloud2.png" id="cloud2">
+            <img src="img/stars.png" class="stars">
+            <img src="img/cloud1.png" class="cloud1 cloud1Place">
+            <img src="img/cloud2.png" class="cloud2 cloud2Place">
 
-            <img src="img/moon.png" id="moon">
-            <img src="img/sun.png" id="sun">
+            <img src="img/moon.png" class="moon-png">
+            <img src="img/sun.png" class="sun-png sunPlace">
             <img src="img/mountains_behind.png" id="mountains_behind">
             <h1 id="text">Développeur web</h1>
             <a href="#1" id="btn">Découvrir</a>
             <img src="img/mountains_front.png" id="mountains_front">
         </section>
 
-        <div style="padding-bottom: 10%;" class="sec">
+        <div style="padding-bottom: 5%;" class="sec">
             <div style="padding-top: 5%; text-align: center; color: #fff;">
                 <i id="1" class="fa-solid fa-person fa-7x"></i>
-                <h2 style="text-align: center;margin-bottom: 5%; margin-top: 2%;">Qui je suis ?</h2>
+                <h2 class="title">Qui je suis ?</h2>
             </div>
 
             <div style="display: inline-flex;">
-                <img style="margin-right: 5%;" src="img/png_melvyn.png" id="melvyn">
-                <p style="margin-top:8%; margin-right:5%; text-align: center;">Hello ! Je m'appelle Melvyn REBECA, j'ai
+                <img style="margin-right: 5%; width: 35%;" src="img/melvyn.png" id="melvyn">
+                <p style="margin-top:15%; margin-right:10%; text-align: center; font-size: 1.2em;">Hello ! Je m'appelle
+                    Melvyn REBECA, j'ai
                     20 ans, et je suis
                     actuellement développeur web junior en troisième année de bachelor développement web full-stack chez
                     MyDigitalSchool à Lyon.<br /><br />
@@ -99,364 +96,359 @@
 
                     Je vous invite à consulter le panel non exhaustif de mes compétences ci-dessous.</p>
             </div>
-        </div>
 
-        <div style="padding-top: 5%; text-align: center;">
-            <i id="2" class="fa-solid fa-wrench fa-7x"></i>
-            <h2 style="font-size: 3rem; margin-top: 2%; margin-bottom:3%; text-align:center;">Mes compétences
-            </h2>
-        </div>
-
-        <div id="contain-comp">
-            <div class="comp" style="--clr:#f9a22f">
-                <img style="width: 100px;" src="img/html.png">
-                <div class="content_master">
-                    <h3 style="text-align:center; color: #fff;">HTML</h3>
-                    <div class="master">
-                        <span style="color: #fff;">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="comp" style="--clr:#2b81f2">
-                <img style="width: 100px;" src="img/css.png">
-                <div class="content_master">
-                    <h3 style="text-align:center; color: #fff;">CSS</h3>
-                    <div class="master">
-                        <span style="color: #fff;">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="comp" style="--clr:#C6B310">
-                <img style="width: 100px;" src="img/js.png">
-                <div class="content_master">
-                    <h3 style="text-align:center; color: #fff;">JavaScript</h3>
-                    <div class="master">
-                        <span style="color: #fff;">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="comp" style="--clr:#533D95">
-                <img style="width: 100px;" src="img/php_no.png">
-                <div class="content_master">
-                    <h3 style="text-align:center; color: #fff;">PHP</h3>
-                    <div class="master">
-                        <span style="color: #fff;">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="comp" style="--clr:#B13E0C">
-                <img style="width: 100px;" src="img/laravel.png">
-                <div class="content_master">
-                    <h3 style="text-align:center; color: #fff;">Laravel</h3>
-                    <div class="master">
-                        <span style="color: #fff;">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="comp" style="--clr:#B0561A">
-                <img style="width: 100px;" src="img/git.png">
-                <div class="content_master">
-                    <h3 style="text-align:center; color: #fff;">GIT</h3>
-                    <div class="master">
-                        <span style="color: #fff;">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="comp" style="--clr:#21283D">
-                <img style="width: 100px;" src="img/github.png">
-                <div class="content_master">
-                    <h3 style="text-align:center; color: #fff;">GitHub</h3>
-                    <div class="master">
-                        <span style="color: #fff;">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="comp" style="--clr:#1440BA">
-                <img style="width: 100px;" src="img/ts.png">
-                <div class="content_master">
-                    <h3 style="text-align:center; color: #fff;">TypeScript</h3>
-                    <div class="master">
-                        <span style="color: #fff;">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="comp" style="--clr:#EBB028">
-                <img style="width: 100px;" src="img/mysql.png">
-                <div class="content_master">
-                    <h3 style="text-align:center; color: #fff;">MySQL</h3>
-                    <div class="master">
-                        <span style="color: #fff;">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="comp" style="--clr:#DA1929">
-                <img style="width: 100px;" src="img/angular.png">
-                <div class="content_master">
-                    <h3 style="text-align:center; color: #fff;">Angular</h3>
-                    <div class="master">
-                        <span style="color: #fff;">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="comp" style="--clr:#9D1F6D">
-                <img style="width: 100px;" src="img/sass.png">
-                <div class="content_master">
-                    <h3 style="text-align:center; color: #fff;">SASS</h3>
-                    <div class="master">
-                        <span style="color: #fff;">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="comp" style="--clr:#246C26">
-                <img style="width: 100px;" src="img/vuejs.png">
-                <div class="content_master">
-                    <h3 style="text-align:center; color: #fff;">VueJs</h3>
-                    <div class="master">
-                        <span style="color: #fff;">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="comp" style="--clr:#2b81f2">
-                <img style="width: 100px;" src="img/jquery.png">
-                <div class="content_master">
-                    <h3 style="text-align:center; color: #fff;">Jquery</h3>
-                    <div class="master">
-                        <span style="color: #fff;">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="comp" style="--clr:#871975">
-                <img style="width: 100px;" src="img/linux.png">
-                <div class="content_master">
-                    <h3 style="text-align:center; color: #fff;">Linux/Bash</h3>
-                    <div class="master">
-                        <span style="color: #fff;">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="comp" style="--clr:#2b81f2">
-                <img style="width: 100px;" src="img/wordpress.png">
-                <div class="content_master">
-                    <h3 style="text-align:center; color: #fff;">WordPress</h3>
-                    <div class="master">
-                        <span style="color: #fff;">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="comp" style="--clr:#3B6538">
-                <img style="width: 100px;" src="img/nodejs.png">
-                <div class="content_master">
-                    <h3 style="text-align:center; color: #fff;">NodeJs</h3>
-                    <div class="master">
-                        <span style="color: #fff;">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="comp" style="--clr:#691414">
-                <img style="width: 100px;" src="img/p5js.png">
-                <div class="content_master">
-                    <h3 style="text-align:center; color: #fff;">P5.js</h3>
-                    <div class="master">
-                        <span style="color: #fff;">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="comp" style="--clr:#950000">
-                <img style="width: 100px;" src="img/adobe.png">
-                <div class="content_master">
-                    <h3 style="text-align:center; color: #fff;">Adobe</h3>
-                    <div class="master">
-                        <span style="color: #fff;">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="comp" style="--clr:#DDDADA">
-                <img style="width: 100px;" src="img/filezilla.png">
-                <div class="content_master">
-                    <h3 style="text-align:center; color: #fff;">Filezilla</h3>
-                    <div class="master">
-                        <span style="color: #fff;">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="comp" style="--clr:#DDAF30">
-                <img style="width: 100px;" src="img/seo.png">
-                <div class="content_master">
-                    <h3 style="text-align:center; color: #fff;">SEO</h3>
-                    <div class="master">
-                        <span style="color: #fff;">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="parcour">
-
-            <div style="text-align: center; margin-top: 5%;">
-                <i id="3" class="fa-solid fa-graduation-cap fa-7x"></i>
-
-                <h2 style="font-size: 3rem; margin-top: 2%; text-align:center; margin-bottom: 15%;">Mon
-                    parcours</h2>
+            <div style="margin-top: 15%; text-align: center; color: #fff;">
+                <i id="2" class="fa-solid fa-wrench fa-7x"></i>
+                <h2 class="title">Mes compétences</h2>
             </div>
 
-            <div class="eventUn">
-                <h3>2017 - 2020</h3>
-                <h3>Entrée au lycée Bac Pro Système Numérique</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quae fuga praesentium facilis
-                    dignissimos! Minus doloribus eos consectetur. Similique quam iusto tempora repudiandae! Ducimus
-                    nostrum nobis porro asperiores dicta assumenda!</p>
-            </div>
-            <div class="cube a">
-                <div class="top"></div>
-                <div>
-                    <span style="--i:0">
-                        <h1>Bac pro Système Numérique</h1>
-                    </span>
-                    <span style="--i:1">
-                        <h1>Bac pro Système Numérique</h1>
-                    </span>
-                    <span style="--i:2">
-                        <h1>Bac pro Système Numérique</h1>
-                    </span>
-                    <span style="--i:3">
-                        <h1>Bac pro Système Numérique</h1>
-                    </span>
+            <div id="contain-comp">
+                <div class="comp" style="--clr:#21283D">
+                    <img style="width: 100px;" src="img/html.png">
+                    <div class="content_master">
+                        <h3 style="text-align:center; color: #fff;">HTML</h3>
+                        <div class="master">
+                            <span style="color: #fff;">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="comp" style="--clr:#21283D">
+                    <img style="width: 100px;" src="img/css.png">
+                    <div class="content_master">
+                        <h3 style="text-align:center; color: #fff;">CSS</h3>
+                        <div class="master">
+                            <span style="color: #fff;">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="comp" style="--clr:#21283D">
+                    <img style="width: 100px;" src="img/js.png">
+                    <div class="content_master">
+                        <h3 style="text-align:center; color: #fff;">JavaScript</h3>
+                        <div class="master">
+                            <span style="color: #fff;">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="comp" style="--clr:#21283D">
+                    <img style="width: 100px;" src="img/php.png">
+                    <div class="content_master">
+                        <h3 style="text-align:center; color: #fff;">PHP</h3>
+                        <div class="master">
+                            <span style="color: #fff;">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="comp" style="--clr:#21283D">
+                    <img style="width: 100px;" src="img/laravel.png">
+                    <div class="content_master">
+                        <h3 style="text-align:center; color: #fff;">Laravel</h3>
+                        <div class="master">
+                            <span style="color: #fff;">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="comp" style="--clr:#21283D">
+                    <img style="width: 100px;" src="img/git.png">
+                    <div class="content_master">
+                        <h3 style="text-align:center; color: #fff;">GIT</h3>
+                        <div class="master">
+                            <span style="color: #fff;">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="comp" style="--clr:#21283D">
+                    <img style="width: 100px;" src="img/github.png">
+                    <div class="content_master">
+                        <h3 style="text-align:center; color: #fff;">GitHub</h3>
+                        <div class="master">
+                            <span style="color: #fff;">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="comp" style="--clr:#21283D">
+                    <img style="width: 100px;" src="img/ts.png">
+                    <div class="content_master">
+                        <h3 style="text-align:center; color: #fff;">TypeScript</h3>
+                        <div class="master">
+                            <span style="color: #fff;">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="comp" style="--clr:#21283D">
+                    <img style="width: 100px;" src="img/mysql.png">
+                    <div class="content_master">
+                        <h3 style="text-align:center; color: #fff;">MySQL</h3>
+                        <div class="master">
+                            <span style="color: #fff;">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="comp" style="--clr:#21283D">
+                    <img style="width: 100px;" src="img/angular.png">
+                    <div class="content_master">
+                        <h3 style="text-align:center; color: #fff;">Angular</h3>
+                        <div class="master">
+                            <span style="color: #fff;">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="comp" style="--clr:#21283D">
+                    <img style="width: 100px;" src="img/sass.png">
+                    <div class="content_master">
+                        <h3 style="text-align:center; color: #fff;">SASS</h3>
+                        <div class="master">
+                            <span style="color: #fff;">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="comp" style="--clr:#21283D">
+                    <img style="width: 100px;" src="img/vuejs.png">
+                    <div class="content_master">
+                        <h3 style="text-align:center; color: #fff;">VueJs</h3>
+                        <div class="master">
+                            <span style="color: #fff;">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="comp" style="--clr:#21283D">
+                    <img style="width: 100px;" src="img/jquery.png">
+                    <div class="content_master">
+                        <h3 style="text-align:center; color: #fff;">Jquery</h3>
+                        <div class="master">
+                            <span style="color: #fff;">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="comp" style="--clr:#21283D">
+                    <img style="width: 100px;" src="img/linux.png">
+                    <div class="content_master">
+                        <h3 style="text-align:center; color: #fff;">Linux/Bash</h3>
+                        <div class="master">
+                            <span style="color: #fff;">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="comp" style="--clr:#21283D">
+                    <img style="width: 100px;" src="img/wordpress.png">
+                    <div class="content_master">
+                        <h3 style="text-align:center; color: #fff;">WordPress</h3>
+                        <div class="master">
+                            <span style="color: #fff;">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="comp" style="--clr:#21283D">
+                    <img style="width: 100px;" src="img/nodejs.png">
+                    <div class="content_master">
+                        <h3 style="text-align:center; color: #fff;">NodeJs</h3>
+                        <div class="master">
+                            <span style="color: #fff;">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="comp" style="--clr:#21283D">
+                    <img style="width: 100px;" src="img/p5js.png">
+                    <div class="content_master">
+                        <h3 style="text-align:center; color: #fff;">P5.js</h3>
+                        <div class="master">
+                            <span style="color: #fff;">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="comp" style="--clr:#21283D">
+                    <img style="width: 100px;" src="img/adobe.png">
+                    <div class="content_master">
+                        <h3 style="text-align:center; color: #fff;">Adobe</h3>
+                        <div class="master">
+                            <span style="color: #fff;">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="comp" style="--clr:#21283D">
+                    <img style="width: 100px;" src="img/filezilla.png">
+                    <div class="content_master">
+                        <h3 style="text-align:center; color: #fff;">Filezilla</h3>
+                        <div class="master">
+                            <span style="color: #fff;">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="comp" style="--clr:#21283D">
+                    <img style="width: 100px;" src="img/seo.png">
+                    <div class="content_master">
+                        <h3 style="text-align:center; color: #fff;">SEO</h3>
+                        <div class="master">
+                            <span style="color: #fff;">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div style="height: 300px;"></div>
-            <div class="eventDeux">
-                <h3>2020 - 2023</h3>
-                <h3>Bachelor développeur web full-stack</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quae fuga praesentium facilis
-                    dignissimos! Minus doloribus eos consectetur. Similique quam iusto tempora repudiandae! Ducimus
-                    nostrum nobis porro asperiores dicta assumenda!</p>
-            </div>
-            <div class="cube b">
-                <div class="top"></div>
-                <div>
-                    <span style="--i:0">
-                        <h1>Bachelor développeur web full-stack</h1>
-                    </span>
-                    <span style="--i:1">
-                        <h1>Bachelor développeur web full-stack</h1>
-                    </span>
-                    <span style="--i:2">
-                        <h1>Bachelor développeur web full-stack</h1>
-                    </span>
-                    <span style="--i:3">
-                        <h1>Bachelor développeur web full-stack</h1>
-                    </span>
+
+
+            <div class="parcour">
+                <div style="text-align: center; margin-top: 5%; margin-bottom: 5%;">
+                    <i id="3" class="fa-solid fa-graduation-cap fa-7x"></i>
+                    <h2 class="title">Mon parcours</h2>
+                </div>
+
+                <div class="eventUn">
+                    <h3>2017 - 2020</h3>
+                    <h3>Entrée au lycée Bac Pro Système Numérique</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quae fuga praesentium facilis
+                        dignissimos! Minus doloribus eos consectetur. Similique quam iusto tempora repudiandae! Ducimus
+                        nostrum nobis porro asperiores dicta assumenda!</p>
+                </div>
+                <div class="cube a">
+                    <div class="top"></div>
+                    <div>
+                        <span style="--i:0">
+                            <h1>Bac pro Système Numérique</h1>
+                        </span>
+                        <span style="--i:1">
+                            <h1>Bac pro Système Numérique</h1>
+                        </span>
+                        <span style="--i:2">
+                            <h1>Bac pro Système Numérique</h1>
+                        </span>
+                        <span style="--i:3">
+                            <h1>Bac pro Système Numérique</h1>
+                        </span>
+                    </div>
+                </div>
+                <div style="height: 300px;"></div>
+                <div class="eventDeux">
+                    <h3>2020 - 2023</h3>
+                    <h3>Bachelor développeur web full-stack</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quae fuga praesentium facilis
+                        dignissimos! Minus doloribus eos consectetur. Similique quam iusto tempora repudiandae! Ducimus
+                        nostrum nobis porro asperiores dicta assumenda!</p>
+                </div>
+                <div class="cube b">
+                    <div class="top"></div>
+                    <div>
+                        <span style="--i:0">
+                            <h1>Bachelor développeur web full-stack</h1>
+                        </span>
+                        <span style="--i:1">
+                            <h1>Bachelor développeur web full-stack</h1>
+                        </span>
+                        <span style="--i:2">
+                            <h1>Bachelor développeur web full-stack</h1>
+                        </span>
+                        <span style="--i:3">
+                            <h1>Bachelor développeur web full-stack</h1>
+                        </span>
+                    </div>
                 </div>
             </div>
 
         </div>
 
         <div class="projectPage">
-            <div style="text-align: center; margin-top: 5%;">
+            <div style="text-align: center; color: #fff;">
                 <i id="4" class="fa-solid fa-folder-open fa-7x"></i>
-                <h2 style="font-size: 3rem; margin-top: 2%; text-align:center; margin-bottom: 5%;">Mes Projets
-                </h2>
+                <h2 class="title">Mes Projets</h2>
             </div>
 
             <div id="skil">
@@ -479,7 +471,7 @@
                             nostrum nobis porro asperiores dicta assumenda!</p>
                         <button>Tester le projet</button>
                     </div>
-                    <img src="img/html_notext.png" class="skil-img">
+                    <img src="img/html.png" class="skil-img">
                 </div>
             </div>
             <div id="skil">
@@ -507,17 +499,17 @@
 
             </div>
         </div>
-    </div>
 
-    <div id="expePage" style="padding-top: 5%;margin-top: 10%;">
-        <div style="text-align: center;">
-            <i id="5" class="fa-solid fa-briefcase fa-7x"></i>
-            <h2 style="font-size: 3rem; padding-bottom:10%; text-align:center; margin-bottom: 5%;">Mes
-                expériences</h2>
+        <div id="expePage" style="padding-top: 5%;margin-top: 10%;">
+            <div style="text-align: center;">
+                <i id="5" class="fa-solid fa-briefcase fa-7x"></i>
+                <h2 class="title">Mes expériences</h2>
+            </div>
+
+
+
+
         </div>
-
-
-
     </div>
     <button onclick="topFunction()" id="myBtn" title="Go to top">
         <i class="fa-solid fa-arrow-up"></i>
@@ -543,68 +535,39 @@
         body.style.height = "auto";
     })
 
-    let stars = document.getElementById('stars');
-    let cloud1 = document.getElementById('cloud1');
-    let cloud2 = document.getElementById('cloud2');
-    let moon = document.getElementById('moon');
-    let sun = document.getElementById('sun');
+    document.querySelector(".contain-theme").addEventListener("click", () => {
+        document.querySelector(".sun-logo").classList.toggle("animate-sun");
+        document.querySelector(".moon-logo").classList.toggle("animate-moon");
+
+        document.querySelector(".moon-png").classList.toggle("off-night");
+        document.querySelector(".sun-png").classList.toggle("placeSun");
+        document.querySelector(".sun-png").classList.toggle("sunPlace");
+
+        document.querySelector(".cloud1").classList.toggle("cloud1Place");
+        document.querySelector(".cloud1").classList.toggle("on-cloud1");
+        document.querySelector(".cloud2").classList.toggle("cloud2Place");
+        document.querySelector(".cloud2").classList.toggle("on-cloud2");
+
+        document.querySelector(".stars").classList.toggle("opacityOff");
+        document.querySelector("section").classList.toggle("day");
+
+
+    })
+
     let mountains_behind = document.getElementById('mountains_behind');
     let text = document.getElementById('text');
     let btn = document.getElementById('btn');
     let mountains_front = document.getElementById('mountains_front');
     let header = document.querySelector('header');
     let theme = document.getElementById('theme');
+    let stars = document.querySelector('.stars');
+    let moon = document.querySelector('.moon-png');
+    let sun = document.querySelector('.sun-png');
+    let cloud1 = document.querySelector('.cloud1');
+    let cloud2 = document.querySelector('.cloud2');
 
 
-    sun.style.display = "none";
-    sun.style.marginTop = "7%";
 
-    cloud1.style.display = "none";
-    cloud2.style.display = "none";
-
-    $('#day').click(function day() {
-        $('#moon').css({
-            'display': 'none'
-        });
-        $('#sun').css({
-            'display': 'block'
-        });
-        $('section').css({
-            'background': 'linear-gradient(#3B8EA5,#1bccdd )'
-        });
-        $('#stars').css({
-            'display': 'none'
-        });
-        $('#cloud1').css({
-            'display': 'block',
-            'margin-top': '5%'
-        });
-        $('#cloud2').css({
-            'display': 'block',
-            'margin-top': '5%'
-        });
-    });
-    $('#night').click(function night() {
-        $('#sun').css({
-            'display': 'none'
-        });
-        $('#moon').css({
-            'display': 'block'
-        });
-
-        $('section').css({
-            'background': 'linear-gradient(#2b1055, #7597de)'
-        });
-        $('#stars').css({
-            'display': 'block'
-        });
-        $('#cloud1').css({
-            'display': 'none'
-        });
-        $('#cloud2').css({
-            'display': 'none'
-        });
-    });
     window.addEventListener("load", scroll, false);
     window.addEventListener("resize", scroll, false);
 
@@ -617,6 +580,7 @@
         cloud2.style.marginLeft = value * 0.5 + "px";
         moon.style.top = value * 1.05 + "px";
         sun.style.top = value * 1.05 + "px";
+        sun.style.marginTop = 5 + "%";
 
         mountains_behind.style.top = value * 0.3 + "px";
         mountains_front.style.bottom = value * 0.2 + "px";
@@ -624,8 +588,8 @@
         text.style.marginTop = value * 1 + "px";
         btn.style.marginTop = value * 1 + "px";
 
-
     })
+
 
 
     let mybutton = document.getElementById("myBtn");

@@ -39,31 +39,61 @@ body {
   background-color: #AB3428; /* Add a dark-grey background on hover */
 }
 
+.title {
+  font-size: 3rem;
+  padding-bottom: 5%;
+  text-align: center;
+  margin-top: 2%;
+}
+
 header {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  padding: 30px 100px;
+  width: -webkit-fill-available;
+  margin-bottom: 5%;
+  padding-left: 5%;
+  padding-top: 2%;
   display: flex;
   align-items: center;
   z-index: 8000;
 }
-header .logo {
-  color: #fff;
-  font-weight: 700;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+header #logoM {
+  width: 30%;
 }
-header .logo #logoM {
-  width: 25%;
-  background: #fff;
-  border-radius: 50%;
-  padding: 5%;
+header .contain-theme {
   position: relative;
-  top: 20px;
-  left: 0;
+}
+header .contain-theme .sun, header .contain-theme .moon {
+  width: fit-content;
+  height: fit-content;
+}
+header .contain-theme .moon {
+  position: absolute;
+  inset: 0;
+}
+header .contain-theme .moon-logo {
+  opacity: 0;
+  transform: translateY(20%) rotateZ(50deg);
+  transition: all 1s ease-out;
+}
+header .contain-theme .sun-logo {
+  opacity: 1;
+  transform: translateY(0) rotateZ(0deg);
+  transition: all 1s ease-out;
+}
+header .contain-theme .animate-sun {
+  opacity: 0;
+  transform: translateY(20%) rotateZ(100deg);
+  color: aliceblue;
+}
+header .contain-theme .animate-moon {
+  opacity: 1;
+  transform: translateY(0%) rotateZ(0deg);
+  color: aliceblue;
+}
+header .contain-theme:hover {
+  cursor: pointer;
 }
 header #night {
   background-color: transparent;
@@ -191,6 +221,7 @@ section {
   align-items: center;
   overflow: hidden;
   background: linear-gradient(#2b1055, #7597de);
+  transition: all 1s ease-out;
 }
 section img {
   position: absolute;
@@ -201,30 +232,47 @@ section img {
   object-fit: cover;
   pointer-events: none;
 }
-section img#moon {
+section .moon-png {
   mix-blend-mode: screen;
+  transition: all 1s ease-out;
 }
-section img#sun {
+section .sun-png {
   width: 32%;
   height: 35%;
-  left: 34%;
   mix-blend-mode: screen;
+  transition: all 1s ease-out;
 }
-section img#cloud1 {
+section .sunPlace {
+  left: -30%;
+  top: 50%;
+}
+section .stars {
+  transition: all 1s ease-out;
+}
+section .cloud1 {
   width: 25%;
-  left: 15%;
   margin-top: 5%;
   height: 200px;
+  transition: all 1s ease-out;
 }
-section img#cloud2 {
+section .cloud1Place {
+  top: -40%;
+  left: -50%;
+}
+section .cloud2 {
   width: 25%;
   margin-top: 5%;
-  left: 60%;
   height: 200px;
+  transition: all 1s ease-out;
 }
-section img#mountains_front {
+section .cloud2Place {
+  top: -40%;
+  left: 100%;
+}
+section #mountains_front {
   z-index: 10;
   margin-top: 5%;
+  transition: all 1s ease-out;
 }
 section #text {
   position: absolute;
@@ -233,6 +281,7 @@ section #text {
   font-size: 6vw;
   right: -360px;
   z-index: 9;
+  transition: all 1s ease-out;
 }
 section #btn {
   text-decoration: none;
@@ -246,9 +295,47 @@ section #btn {
   transform: translateY(100px);
 }
 
+.off-night {
+  left: 70%;
+  top: 50%;
+}
+
+.opacityOff {
+  opacity: 0;
+}
+
+.on-cloud1 {
+  left: 15%;
+  top: 5%;
+}
+
+.on-cloud2 {
+  left: 60%;
+  top: 5%;
+}
+
+.placeSun {
+  display: block;
+  left: 33%;
+  top: 8%;
+  width: 32%;
+  height: 35%;
+  mix-blend-mode: screen;
+  transition: all 1s ease-out;
+}
+
+.day {
+  background: linear-gradient(#34c7de, #81bbcf);
+  transition-duration: 0.4s;
+}
+
+#page {
+  background: linear-gradient(#2b1055, #7597de);
+  color: #fff;
+}
+
 .sec {
   position: relative;
-  background: black;
 }
 .sec h2 {
   font-size: 3rem;
@@ -265,7 +352,7 @@ section #btn {
   height: 130px;
   margin: 4%;
   padding: 2%;
-  background-color: var(--clr);
+  background-color: rgb(88, 81, 99);
   border-radius: 20px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   transition-duration: 0.5s;
@@ -311,7 +398,6 @@ section #btn {
 }
 
 .parcour {
-  background: black;
   color: #fff;
   padding-top: 5px;
   margin-top: 5%;
@@ -538,7 +624,6 @@ section #btn {
 }
 
 #expePage {
-  background: #151515;
   color: #fff;
 }
 

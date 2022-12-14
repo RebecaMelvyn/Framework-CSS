@@ -46,35 +46,67 @@ body{
   #myBtn:hover {
     background-color: $red; /* Add a dark-grey background on hover */
   }
+
+.title{
+    font-size: 3rem;
+    padding-bottom:5%; 
+    text-align:center;
+    margin-top: 2%;
+}
+
 header{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    padding: 30px 100px;
+    width: -webkit-fill-available;
+    margin-bottom: 5%;
+    padding-left: 5%;
+    padding-top: 2%;
     display: flex;
     align-items: center;
-
     z-index: 8000;
 
-    .logo{
-        color: $white;
-        font-weight: 700;
-        text-decoration: none;
-        text-transform: uppercase;
-        letter-spacing: 2px;
+    #logoM{
+        width: 30%;
+    }
 
-        #logoM{
-            width: 25%;
-            background: #fff;
-            border-radius: 50%;
-            padding: 5%;
-            position: relative;
-            top: 20px;  
-            left: 0;
-            
+    .contain-theme{
+        position: relative;
+
+        .sun, .moon{
+            width: fit-content;
+            height: fit-content;
+        }
+        .moon{
+            position: absolute;
+            inset: 0;
+        }
+        .moon-logo{
+            opacity: 0;
+            transform: translateY(20%) rotateZ(50deg);
+            transition: all 1s ease-out;
+        }
+        .sun-logo{
+            opacity: 1;
+            transform: translateY(0) rotateZ(0deg);
+            transition: all 1s ease-out;
+        }
+        .animate-sun{
+            opacity: 0;
+            transform: translateY(20%) rotateZ(100deg);
+            color: aliceblue;
+        }
+        .animate-moon{
+            opacity: 1;
+            transform: translateY(0%) rotateZ(0deg);
+            color: aliceblue;
         }
     }
+    .contain-theme:hover{
+        cursor: pointer;
+    }
+
+
     @mixin button_theme {
         background-color: transparent;
         border: none;
@@ -167,6 +199,8 @@ header{
 }
 
 
+
+
 nav{
 
     ul{
@@ -224,8 +258,9 @@ section{
     align-items: center;
     overflow: hidden;
     background: linear-gradient(#2b1055, #7597de);
-
-
+    transition: all 1s ease-out;
+    
+    
     img{
         position: absolute;
         top: 0;
@@ -236,33 +271,53 @@ section{
         pointer-events: none;
         
     } 
-    img#moon{
+    .moon-png{
         mix-blend-mode: screen;
+        transition: all 1s ease-out;
         
     }
-    img#sun{
+    .sun-png{
         width: 32%;
         height: 35%;
-        left: 34%;
         mix-blend-mode: screen;
-           
-        }
-    img#cloud1{
-        width: 25%;
-        left: 15%;
-        margin-top: 5%;
-        height: 200px;
-    }
-    img#cloud2{
-        width: 25%;
-        margin-top: 5%;
-        left: 60%;
-        height: 200px;
+        transition: all 1s ease-out;
         
     }
-    img#mountains_front{
+    .sunPlace{
+        left: -30%;
+        top: 50%;
+
+    }
+    .stars{
+        
+        transition: all 1s ease-out;
+    }
+    .cloud1{
+      
+        width: 25%;
+        margin-top: 5%;
+        height: 200px;
+        transition: all 1s ease-out;
+    }
+    .cloud1Place{
+        top: -40%;
+        left: -50%;
+    }
+    .cloud2{
+        
+        width: 25%;
+        margin-top: 5%;
+        height: 200px;
+        transition: all 1s ease-out;
+    }
+    .cloud2Place{
+        top: -40%;
+        left: 100%;
+    }
+    #mountains_front{
         z-index: 10;
         margin-top: 5%;
+        transition: all 1s ease-out;
     }
     #text{
         position: absolute;
@@ -271,6 +326,7 @@ section{
         font-size: 6vw;
         right: -360px;
         z-index: 9;
+        transition: all 1s ease-out;
         
     }
     #btn{
@@ -285,30 +341,64 @@ section{
         transform: translateY(100px);
     }
 }
+.off-night{
+    left: 70%;
+    top: 50%;
+}
+.opacityOff{
+    opacity: 0;
+}
+.on-cloud1{
+    left: 15%;
+    top: 5%;
+}
+.on-cloud2{
+    left: 60%;
+    top: 5%;
+   
+}
+.placeSun{
+    display: block;
+    left: 33%;
+    top: 8%;
+    width: 32%;
+        height: 35%;
+        mix-blend-mode: screen;
+        transition: all 1s ease-out;
+}
+.day{
 
+    background: linear-gradient(#34c7de, #81bbcf);
+    transition-duration: 0.4s;
+}
+#page{
+
+    background: linear-gradient(#2b1055, #7597de);
+    color: #fff;
+}
 .sec{
     position: relative;
-    
-    background: black;
 
     h2{
         font-size: 3rem;
         margin-bottom: 10px;
         color: $white;
     }
-
+    
     p{
         font-size: 1rem;
         color: $white;
     }
 }
 
+
+
 .comp{
     width: 100px;
     height: 130px;
     margin: 4%;
     padding: 2%;
-    background-color:var(--clr);
+    background-color: rgb(88, 81, 99);
     border-radius: 20px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     transition-duration: 0.5s;
@@ -352,7 +442,7 @@ section{
 }
 
 .parcour{
-    background: black; 
+   
     color: #fff;
     padding-top: 5px;
     margin-top: 5%;
@@ -593,7 +683,10 @@ section{
 
 
 #expePage{
-    background: #151515;
+
     color: #fff;
 }
 
+@media screen and (max-width) {
+    
+}
