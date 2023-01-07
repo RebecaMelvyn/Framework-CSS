@@ -63,6 +63,8 @@ header #logoM {
 }
 header .contain-theme {
   position: relative;
+  right: -70%;
+  margin-top: 2%;
 }
 header .contain-theme .sun, header .contain-theme .moon {
   width: fit-content;
@@ -325,7 +327,7 @@ section #btn {
 }
 
 .day {
-  background: linear-gradient(#34c7de, #81bbcf);
+  background: linear-gradient(#4a9af5, #0e6ac7);
   transition-duration: 0.4s;
 }
 .day a {
@@ -337,7 +339,7 @@ section #btn {
 }
 
 .changeTheme {
-  background: linear-gradient(#34c7de, #81bbcf);
+  background: linear-gradient(#4a9af5, #0e6ac7);
 }
 
 .themePage {
@@ -386,7 +388,7 @@ section #btn {
 }
 
 .comp:hover {
-  height: 180px;
+  height: 160px;
   border-radius: 5px;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
@@ -397,15 +399,6 @@ section #btn {
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-}
-
-.master {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.master i {
-  color: #fff;
 }
 
 .content_master {
@@ -578,12 +571,12 @@ section #btn {
   transition-duration: 0.4s;
 }
 
-.card:hover {
+.card {
   width: 600px;
   transition-delay: 0s;
 }
 
-.card .circle::before {
+.card .circle {
   content: "";
   position: absolute;
   top: 0;
@@ -595,7 +588,7 @@ section #btn {
   transition: 0.5s;
 }
 
-.card:hover .circle::before {
+.card .circle {
   clip-path: circle(400px at center);
 }
 
@@ -606,12 +599,12 @@ section #btn {
   transition-delay: 0.5s;
 }
 
-.card:hover .circle .logo-skil {
+.card .circle .logo-skil {
   transform: scale(0);
   transition-delay: 0s;
 }
 
-.card:hover .content {
+.card .content {
   left: 0;
   opacity: 1;
   visibility: visible;
@@ -636,7 +629,7 @@ section #btn {
   transition-delay: 0s;
 }
 
-.card:hover .skil-img {
+.card .skil-img {
   transform: translate(10%, -50%) scale(1);
   transition-delay: 0.5s;
 }
@@ -648,6 +641,104 @@ section #btn {
 
 #expePage {
   color: #fff;
+}
+
+#nav-phone {
+  display: none;
+}
+
+#melvyn {
+  margin-right: 5%;
+  width: 35%;
+}
+
+@media screen and (max-width: 426px) {
+  #skil {
+    display: block;
+  }
+  .card {
+    width: 250px;
+  }
+  .card .skil-img {
+    transform: translate(-35%, -50%) scale(1);
+  }
+  .b {
+    left: 10%;
+  }
+  section {
+    height: 65vh;
+  }
+  section #btn {
+    margin-left: 10%;
+    margin-bottom: 35%;
+    font-size: 16px;
+  }
+  nav {
+    display: none;
+  }
+  #nav-phone {
+    display: block;
+    position: fixed;
+    bottom: 0%;
+    left: 20%;
+  }
+  #nav-phone ul {
+    list-style-type: none;
+    display: inline-flex;
+  }
+  #nav-phone ul li {
+    background-color: #26308b;
+    margin: 2%;
+    padding: 2%;
+  }
+  #nav-phone ul li:hover {
+    background-color: #00d4ec;
+  }
+  #nav-phone a {
+    text-decoration: none;
+    color: #000;
+  }
+  #myBtn {
+    right: 10px;
+    bottom: 60px;
+    padding: 5px;
+  }
+  .sec p {
+    font-size: 0.5em;
+  }
+  section .moon-png {
+    scale: 0.6;
+    top: -70px;
+  }
+  #melvyn {
+    width: 50%;
+    height: 1%;
+    margin: 0;
+  }
+  header .contain-theme {
+    right: -18%;
+  }
+  section .cloud1 {
+    margin-right: 5%;
+    scale: 0.5;
+    width: 100%;
+  }
+  section .cloud1Place {
+    top: -40%;
+    left: -80%;
+  }
+  .on-cloud1 {
+    left: -30%;
+    top: 5%;
+  }
+  section .cloud2 {
+    scale: 0.5;
+    width: 100%;
+  }
+  .on-cloud2 {
+    left: 30%;
+    top: 5%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
