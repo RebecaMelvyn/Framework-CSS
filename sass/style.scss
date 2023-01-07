@@ -714,22 +714,34 @@ section{
     margin-right: 5%;
     width: 35%;
 }
+.separe{
+    height: 300px;
+}
 
 @media screen and (max-width: 426px) {
 
     #skil{
         display: block;
+
+        .content{
+            font-size: 6px;
+        }
     }
     .card{
-        width: 250px;
+        width: 300px;
+        height: 200px;
         
         .skil-img{
-            transform: translate(-35%, -50%) scale(1);
+            transform: translate(-40%, -50%) scale(0.5);
         }
     }
 
+    .circle{
+        margin-left: 15%;
+    }
+
     .b{
-        left: 10%;
+        left: 15%;
     }
 
     section{
@@ -743,30 +755,46 @@ section{
     nav{
         display: none;
     }
+
     #nav-phone{
         display: block;
         position: fixed;
-        bottom: 0%;
-        left: 20%;
+        bottom: -4%;
+        left: 0%;
+        text-align: center;
+        margin: 0;
+        width: 100%;
+        background-color: #222;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
         ul{
             
             list-style-type: none;
-            display: inline-flex;
+            margin-left: 5%;
+            display: flex;
 
             li{
-
-                background-color: #26308b;
-                margin: 2%;
+                margin-top: 0;
+                margin-left: 2%;
+                margin-right: 2%;
+                margin-bottom: 2%;
                 padding: 2%;
             }
             li:hover{
-                background-color: #00d4ec;
+                border-top: 3px solid #00d4ec;
+            }
+            li:active{
+                border-top: 3px solid #00d4ec;
+
+            }
+            li:hover a{
+                color:#00d4ec;
             }
         }
         a{
             text-decoration: none;
             color: #000;
         }
+
     }
 
     #myBtn{
@@ -780,7 +808,7 @@ section{
     }
     section .moon-png{
         scale: 0.6;
-        top: -70px;
+        margin-top: -15%;
     }
 
     #melvyn{
@@ -812,6 +840,34 @@ section{
     .on-cloud2 {
         left: 30%;
         top: 5%;
+    }
+
+    .eventUn{
+        width: 80%;
+        margin-bottom: 1%;
+        margin-top: 25%;
+        left: 10%;
+        text-align: center;
+    }
+    .eventDeux{
+        width: 80%;
+        margin-bottom: 1%;
+        margin-top: 25%;
+        left: 10%;
+        text-align: center;
+    }
+
+    .a{
+        left: 15%;
+    }
+    .separe{
+        height: 100px;
+    }
+
+    .projectUn {
+        width: 80%;
+        margin-left: 10%;
+        text-align: center;
     }
 
     
