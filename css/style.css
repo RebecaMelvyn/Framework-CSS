@@ -650,10 +650,16 @@ section #btn {
 #melvyn {
   margin-right: 5%;
   width: 35%;
+  box-shadow: 8px 39px 100px black;
+  border-radius: 58%;
 }
 
 .separe {
   height: 300px;
+}
+
+.disp-in-fl {
+  display: inline-flex;
 }
 
 @media screen and (max-width: 426px) {
@@ -661,14 +667,14 @@ section #btn {
     display: block;
   }
   #skil .content {
-    font-size: 6px;
+    font-size: 8px;
   }
   .card {
     width: 300px;
     height: 200px;
   }
   .card .skil-img {
-    transform: translate(-40%, -50%) scale(0.5);
+    transform: translate(-20%, -50%) scale(0.4);
   }
   .circle {
     margin-left: 15%;
@@ -690,7 +696,7 @@ section #btn {
   #nav-phone {
     display: block;
     position: fixed;
-    bottom: -4%;
+    bottom: -2%;
     left: 0%;
     text-align: center;
     margin: 0;
@@ -710,18 +716,30 @@ section #btn {
     margin-bottom: 2%;
     padding: 2%;
   }
-  #nav-phone ul li:hover {
-    border-top: 3px solid #00d4ec;
+  #nav-phone ul li .active {
+    color: #00d4ec;
+  }
+  #nav-phone ul li a:active {
+    color: #00d4ec;
   }
   #nav-phone ul li:active {
     border-top: 3px solid #00d4ec;
   }
-  #nav-phone ul li:hover a {
-    color: #00d4ec;
+  #nav-phone ul .act {
+    border-top: 3px solid #00d4ec;
   }
   #nav-phone a {
     text-decoration: none;
-    color: #000;
+    color: rgb(169, 169, 169);
+  }
+  .page-section {
+    margin-top: 5%;
+  }
+  .disp-in-fl {
+    display: block;
+  }
+  .disp-in-fl p {
+    margin-left: 10%;
   }
   #myBtn {
     right: 10px;
@@ -736,12 +754,15 @@ section #btn {
     margin-top: -15%;
   }
   #melvyn {
-    width: 50%;
+    width: 70%;
     height: 1%;
-    margin: 0;
+    margin-top: 8%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
   }
   header .contain-theme {
-    right: -18%;
+    right: -15%;
   }
   section .cloud1 {
     margin-right: 5%;
@@ -787,7 +808,12 @@ section #btn {
   .projectUn {
     width: 80%;
     margin-left: 10%;
+    margin-bottom: 10%;
+    margin-top: 15%;
     text-align: center;
+  }
+  .sec h2 {
+    font-size: 2rem;
   }
 }
 

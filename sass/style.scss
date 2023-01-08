@@ -713,9 +713,15 @@ section{
 #melvyn{
     margin-right: 5%;
     width: 35%;
+    box-shadow: 8px 39px 100px black;
+    border-radius: 58%;
 }
 .separe{
     height: 300px;
+}
+
+.disp-in-fl{
+    display: inline-flex;
 }
 
 @media screen and (max-width: 426px) {
@@ -724,15 +730,16 @@ section{
         display: block;
 
         .content{
-            font-size: 6px;
+            font-size: 8px;
         }
+        
     }
     .card{
         width: 300px;
         height: 200px;
         
         .skil-img{
-            transform: translate(-40%, -50%) scale(0.5);
+            transform: translate(-20%, -50%) scale(0.4);
         }
     }
 
@@ -759,14 +766,15 @@ section{
     #nav-phone{
         display: block;
         position: fixed;
-        bottom: -4%;
+        bottom: -2%;
         left: 0%;
         text-align: center;
         margin: 0;
         width: 100%;
         background-color: #222;
         box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-        ul{
+        
+            ul{
             
             list-style-type: none;
             margin-left: 5%;
@@ -778,24 +786,43 @@ section{
                 margin-right: 2%;
                 margin-bottom: 2%;
                 padding: 2%;
-            }
-            li:hover{
-                border-top: 3px solid #00d4ec;
+                .active{
+                    color: #00d4ec;
+                    
+                }
+                a:active{
+                    
+                    color: #00d4ec;
+                }
             }
             li:active{
+
+                border-top: 3px solid #00d4ec;
+            }
+            .act{
                 border-top: 3px solid #00d4ec;
 
             }
-            li:hover a{
-                color:#00d4ec;
-            }
+
         }
         a{
             text-decoration: none;
-            color: #000;
+            color: rgb(169, 169, 169);
         }
 
     }
+    .page-section{
+        margin-top: 5%;
+    }
+
+    .disp-in-fl{
+        display: block;
+
+        p{
+            margin-left: 10%;
+        }
+    }
+    
 
     #myBtn{
         right: 10px;
@@ -812,12 +839,15 @@ section{
     }
 
     #melvyn{
-        width: 50%;
+        width: 70%;
         height: 1%;
-        margin: 0;
+        margin-top: 8%;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
     }
     header .contain-theme {
-        right: -18%;
+        right: -15%;
     }
 
     section .cloud1 {
@@ -867,8 +897,12 @@ section{
     .projectUn {
         width: 80%;
         margin-left: 10%;
+        margin-bottom: 10%;
+        margin-top: 15%;
         text-align: center;
     }
-
+    .sec h2{
+        font-size: 2rem;
+    }
     
 }

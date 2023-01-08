@@ -37,12 +37,12 @@
 
         <div id="nav-phone">
             <ul>
-                <li><a href="#1"><i class="fa-solid fa-person fa-2x"></i></a></li>
-                <li><a href="#2"><i class="fa-solid fa-wrench fa-2x"></i></a></li>
-                <li><a href="#3"><i class="fa-solid fa-graduation-cap fa-2x"></i></a></li>
-                <li><a href="#4"><i class="fa-solid fa-folder-open fa-2x"></i></a></li>
-                <li><a href="#5"><i class="fa-solid fa-briefcase fa-2x"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-address-book fa-2x"></i></a></li>
+                <li><a class="nav-phone__link" href="#1"><i class="fa-solid fa-person fa-2x"></i></a></li>
+                <li><a class="nav-phone__link" href="#2"><i class="fa-solid fa-wrench fa-2x"></i></a></li>
+                <li><a class="nav-phone__link" href="#3"><i class="fa-solid fa-graduation-cap fa-2x"></i></a></li>
+                <li><a class="nav-phone__link" href="#4"><i class="fa-solid fa-folder-open fa-2x"></i></a></li>
+                <li><a class="nav-phone__link" href="#5"><i class="fa-solid fa-briefcase fa-2x"></i></a></li>
+                <li><a class="nav-phone__link" href="#"><i class="fa-solid fa-address-book fa-2x"></i></a></li>
             </ul>
         </div>
     </header>
@@ -85,231 +85,240 @@
             <img src="img/mountains_front.png" id="mountains_front">
         </section>
 
-        <div style="padding-bottom: 5%;" class="sec">
-            <div style="padding-top: 5%; text-align: center; color: #fff;">
-                <i id="1" class="fa-solid fa-person fa-7x"></i>
-                <h2 class="title">Qui je suis ?</h2>
+        <div style="padding-bottom: 5%;" id="sec">
+            <div class="page-section" id="1">
+
+                <div style="padding-top: 5%; text-align: center; color: #fff;">
+                    <i class="fa-solid fa-person fa-7x"></i>
+                    <h2 class="title">Qui je suis ?</h2>
+                </div>
+
+                <div class="disp-in-fl">
+                    <img src="img/melvyn.png" id="melvyn">
+                    <p style="margin-top:15%; margin-right:10%; text-align: center;">Hello ! Je m'appelle
+                        Melvyn REBECA, j'ai
+                        20 ans, et je suis
+                        actuellement développeur web junior en troisième année de bachelor développement web full-stack
+                        chez
+                        MyDigitalSchool à Lyon.<br /><br />
+
+                        Je vous présente mon portfolio qui retrace mon parcours professionnel.<br />
+                        Au fil de mes formations et de mes expériences, je me suis spécialisé dans le domaine du
+                        développement web, du marketing digital ainsi que du réseau.<br /><br />
+
+                        Je vous invite à consulter le panel non exhaustif de mes compétences ci-dessous.</p>
+                </div>
             </div>
 
-            <div style="display: inline-flex;">
-                <img src="img/melvyn.png" id="melvyn">
-                <p style="margin-top:15%; margin-right:10%; text-align: center;">Hello ! Je m'appelle
-                    Melvyn REBECA, j'ai
-                    20 ans, et je suis
-                    actuellement développeur web junior en troisième année de bachelor développement web full-stack chez
-                    MyDigitalSchool à Lyon.<br /><br />
+            <div class="page-section" id="2">
 
-                    Je vous présente mon portfolio qui retrace mon parcours professionnel.<br />
-                    Au fil de mes formations et de mes expériences, je me suis spécialisé dans le domaine du
-                    développement web, du marketing digital ainsi que du réseau.<br /><br />
+                <div style="margin-top: 15%; text-align: center; color: #fff;">
+                    <i class="fa-solid fa-wrench fa-7x"></i>
+                    <h2 class="title">Mes compétences</h2>
+                </div>
 
-                    Je vous invite à consulter le panel non exhaustif de mes compétences ci-dessous.</p>
-            </div>
+                <div id="contain-comp">
+                    <div class="comp compTheme" style="--clr:#21283D">
+                        <img style="width: 100px;" src="img/html.png">
+                        <div class="content_master">
+                            <h3 style="text-align:center;">HTML</h3>
+                        </div>
+                    </div>
+                    <div class="comp compTheme" style="--clr:#21283D">
+                        <img style="width: 100px;" src="img/css.png">
+                        <div class="content_master">
+                            <h3 style="text-align:center;">CSS</h3>
+                        </div>
+                    </div>
+                    <div class="comp compTheme" style="--clr:#21283D">
+                        <img style="width: 100px;" src="img/js.png">
+                        <div class="content_master">
+                            <h3 style="text-align:center;">JavaScript</h3>
 
-            <div style="margin-top: 15%; text-align: center; color: #fff;">
-                <i id="2" class="fa-solid fa-wrench fa-7x"></i>
-                <h2 class="title">Mes compétences</h2>
-            </div>
+                        </div>
+                    </div>
+                    <div class="comp compTheme" style="--clr:#21283D">
+                        <img style="width: 100px;" src="img/php.png">
+                        <div class="content_master">
+                            <h3 style="text-align:center;">PHP</h3>
+                        </div>
+                    </div>
+                    <div class="comp compTheme" style="--clr:#21283D">
+                        <img style="width: 100px;" src="img/laravel.png">
+                        <div class="content_master">
+                            <h3 style="text-align:center;">Laravel</h3>
+                        </div>
+                    </div>
+                    <div class="comp compTheme" style="--clr:#21283D">
+                        <img style="width: 100px;" src="img/git.png">
+                        <div class="content_master">
+                            <h3 style="text-align:center;">GIT</h3>
+                        </div>
+                    </div>
+                    <div class="comp compTheme" style="--clr:#21283D">
+                        <img style="width: 100px;" src="img/github.png">
+                        <div class="content_master">
+                            <h3 style="text-align:center;">GitHub</h3>
+                        </div>
+                    </div>
+                    <div class="comp compTheme" style="--clr:#21283D">
+                        <img style="width: 100px;" src="img/ts.png">
+                        <div class="content_master">
+                            <h3 style="text-align:center;">TypeScript</h3>
 
-            <div id="contain-comp">
-                <div class="comp compTheme" style="--clr:#21283D">
-                    <img style="width: 100px;" src="img/html.png">
-                    <div class="content_master">
-                        <h3 style="text-align:center;">HTML</h3>
+                        </div>
                     </div>
-                </div>
-                <div class="comp compTheme" style="--clr:#21283D">
-                    <img style="width: 100px;" src="img/css.png">
-                    <div class="content_master">
-                        <h3 style="text-align:center;">CSS</h3>
-                    </div>
-                </div>
-                <div class="comp compTheme" style="--clr:#21283D">
-                    <img style="width: 100px;" src="img/js.png">
-                    <div class="content_master">
-                        <h3 style="text-align:center;">JavaScript</h3>
+                    <div class="comp compTheme" style="--clr:#21283D">
+                        <img style="width: 100px;" src="img/mysql.png">
+                        <div class="content_master">
+                            <h3 style="text-align:center;">MySQL</h3>
 
+                        </div>
                     </div>
-                </div>
-                <div class="comp compTheme" style="--clr:#21283D">
-                    <img style="width: 100px;" src="img/php.png">
-                    <div class="content_master">
-                        <h3 style="text-align:center;">PHP</h3>
+                    <div class="comp compTheme" style="--clr:#21283D">
+                        <img style="width: 100px;" src="img/angular.png">
+                        <div class="content_master">
+                            <h3 style="text-align:center;">Angular</h3>
+                        </div>
                     </div>
-                </div>
-                <div class="comp compTheme" style="--clr:#21283D">
-                    <img style="width: 100px;" src="img/laravel.png">
-                    <div class="content_master">
-                        <h3 style="text-align:center;">Laravel</h3>
+                    <div class="comp compTheme" style="--clr:#21283D">
+                        <img style="width: 100px;" src="img/sass.png">
+                        <div class="content_master">
+                            <h3 style="text-align:center;">SASS</h3>
+                        </div>
                     </div>
-                </div>
-                <div class="comp compTheme" style="--clr:#21283D">
-                    <img style="width: 100px;" src="img/git.png">
-                    <div class="content_master">
-                        <h3 style="text-align:center;">GIT</h3>
-                    </div>
-                </div>
-                <div class="comp compTheme" style="--clr:#21283D">
-                    <img style="width: 100px;" src="img/github.png">
-                    <div class="content_master">
-                        <h3 style="text-align:center;">GitHub</h3>
-                    </div>
-                </div>
-                <div class="comp compTheme" style="--clr:#21283D">
-                    <img style="width: 100px;" src="img/ts.png">
-                    <div class="content_master">
-                        <h3 style="text-align:center;">TypeScript</h3>
+                    <div class="comp compTheme" style="--clr:#21283D">
+                        <img style="width: 100px;" src="img/vuejs.png">
+                        <div class="content_master">
+                            <h3 style="text-align:center;">VueJs</h3>
 
+                        </div>
                     </div>
-                </div>
-                <div class="comp compTheme" style="--clr:#21283D">
-                    <img style="width: 100px;" src="img/mysql.png">
-                    <div class="content_master">
-                        <h3 style="text-align:center;">MySQL</h3>
+                    <div class="comp compTheme" style="--clr:#21283D">
+                        <img style="width: 100px;" src="img/jquery.png">
+                        <div class="content_master">
+                            <h3 style="text-align:center;">Jquery</h3>
+                        </div>
+                    </div>
+                    <div class="comp compTheme" style="--clr:#21283D">
+                        <img style="width: 100px;" src="img/linux.png">
+                        <div class="content_master">
+                            <h3 style="text-align:center;">Linux/Bash</h3>
 
+                        </div>
                     </div>
-                </div>
-                <div class="comp compTheme" style="--clr:#21283D">
-                    <img style="width: 100px;" src="img/angular.png">
-                    <div class="content_master">
-                        <h3 style="text-align:center;">Angular</h3>
+                    <div class="comp compTheme" style="--clr:#21283D">
+                        <img style="width: 100px;" src="img/wordpress.png">
+                        <div class="content_master">
+                            <h3 style="text-align:center;">WordPress</h3>
+                        </div>
                     </div>
-                </div>
-                <div class="comp compTheme" style="--clr:#21283D">
-                    <img style="width: 100px;" src="img/sass.png">
-                    <div class="content_master">
-                        <h3 style="text-align:center;">SASS</h3>
+                    <div class="comp compTheme" style="--clr:#21283D">
+                        <img style="width: 100px;" src="img/nodejs.png">
+                        <div class="content_master">
+                            <h3 style="text-align:center;">NodeJs</h3>
+                        </div>
                     </div>
-                </div>
-                <div class="comp compTheme" style="--clr:#21283D">
-                    <img style="width: 100px;" src="img/vuejs.png">
-                    <div class="content_master">
-                        <h3 style="text-align:center;">VueJs</h3>
+                    <div class="comp compTheme" style="--clr:#21283D">
+                        <img style="width: 100px;" src="img/p5js.png">
+                        <div class="content_master">
+                            <h3 style="text-align:center;">P5.js</h3>
 
+                        </div>
                     </div>
-                </div>
-                <div class="comp compTheme" style="--clr:#21283D">
-                    <img style="width: 100px;" src="img/jquery.png">
-                    <div class="content_master">
-                        <h3 style="text-align:center;">Jquery</h3>
+                    <div class="comp compTheme" style="--clr:#21283D">
+                        <img style="width: 100px;" src="img/adobe.png">
+                        <div class="content_master">
+                            <h3 style="text-align:center;">Adobe</h3>
+                        </div>
                     </div>
-                </div>
-                <div class="comp compTheme" style="--clr:#21283D">
-                    <img style="width: 100px;" src="img/linux.png">
-                    <div class="content_master">
-                        <h3 style="text-align:center;">Linux/Bash</h3>
+                    <div class="comp compTheme" style="--clr:#21283D">
+                        <img style="width: 100px;" src="img/filezilla.png">
+                        <div class="content_master">
+                            <h3 style="text-align:center;">Filezilla</h3>
+                        </div>
+                    </div>
+                    <div class="comp compTheme" style="--clr:#21283D">
+                        <img style="width: 100px;" src="img/seo.png">
+                        <div class="content_master">
+                            <h3 style="text-align:center;">SEO</h3>
 
-                    </div>
-                </div>
-                <div class="comp compTheme" style="--clr:#21283D">
-                    <img style="width: 100px;" src="img/wordpress.png">
-                    <div class="content_master">
-                        <h3 style="text-align:center;">WordPress</h3>
-                    </div>
-                </div>
-                <div class="comp compTheme" style="--clr:#21283D">
-                    <img style="width: 100px;" src="img/nodejs.png">
-                    <div class="content_master">
-                        <h3 style="text-align:center;">NodeJs</h3>
-                    </div>
-                </div>
-                <div class="comp compTheme" style="--clr:#21283D">
-                    <img style="width: 100px;" src="img/p5js.png">
-                    <div class="content_master">
-                        <h3 style="text-align:center;">P5.js</h3>
-
-                    </div>
-                </div>
-                <div class="comp compTheme" style="--clr:#21283D">
-                    <img style="width: 100px;" src="img/adobe.png">
-                    <div class="content_master">
-                        <h3 style="text-align:center;">Adobe</h3>
-                    </div>
-                </div>
-                <div class="comp compTheme" style="--clr:#21283D">
-                    <img style="width: 100px;" src="img/filezilla.png">
-                    <div class="content_master">
-                        <h3 style="text-align:center;">Filezilla</h3>
-                    </div>
-                </div>
-                <div class="comp compTheme" style="--clr:#21283D">
-                    <img style="width: 100px;" src="img/seo.png">
-                    <div class="content_master">
-                        <h3 style="text-align:center;">SEO</h3>
-
+                        </div>
                     </div>
                 </div>
             </div>
 
 
             <div class="separe"></div>
-            <div class="parcour">
-                <div style="text-align: center; margin-top: 5%; margin-bottom: 5%;">
-                    <i id="3" class="fa-solid fa-graduation-cap fa-7x"></i>
-                    <h2 class="title">Mon parcours</h2>
+            <div class="page-section" id="3">
+
+                <div class="parcour">
+                    <div style="text-align: center; margin-top: 5%; margin-bottom: 5%;">
+                        <i class="fa-solid fa-graduation-cap fa-7x"></i>
+                        <h2 class="title">Mon parcours</h2>
+                    </div>
+
+                    <div class="eventUn">
+                        <h3>2017 - 2020</h3>
+                        <h3>Bac Pro Système Numérique option RISC</h3>
+                        <h4>Lycée polyvalent Georges-Brière à Murigny</h4>
+                        <p>Tout d'abord attiré par le réseau, j'ai suivi cette formation qui
+                            m'a permis d'aborder le monde du travail via plusieurs stages effectué
+                            en entreprise.<br />
+                            Cette formation m'a permis d'avoir une bonne base sur les réseaux.</p>
+                    </div>
+                    <div class="cube a">
+                        <div class="top"></div>
+                        <div>
+                            <span style="--i:0">
+                                <h1>Bac pro Système Numérique</h1>
+                            </span>
+                            <span style="--i:1">
+                                <h1>Bac pro Système Numérique</h1>
+                            </span>
+                            <span style="--i:2">
+                                <h1>Bac pro Système Numérique</h1>
+                            </span>
+                            <span style="--i:3">
+                                <h1>Bac pro Système Numérique</h1>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="separe"></div>
+                    <div class="eventDeux">
+                        <h3>2020 - 2023</h3>
+                        <h3>Bachelor développeur web full-stack</h3>
+                        <h4>Ecole supérieur My Digital School Lyon</h4>
+                        <p>Suite à un stage au cours duquel j'ai été initier
+                            aux bases du développement web, je me suis découvert une
+                            nouvelle passion.<br />
+                            C'est pourquoi j'ai effectué cette formation qui se rapprochait
+                            le plus de ce que l'on doit effectuer réellement en entreprise.
+                        </p>
+                    </div>
+                    <div class="cube b">
+                        <div class="top"></div>
+                        <div>
+                            <span style="--i:0">
+                                <h1>Bachelor développeur web full-stack</h1>
+                            </span>
+                            <span style="--i:1">
+                                <h1>Bachelor développeur web full-stack</h1>
+                            </span>
+                            <span style="--i:2">
+                                <h1>Bachelor développeur web full-stack</h1>
+                            </span>
+                            <span style="--i:3">
+                                <h1>Bachelor développeur web full-stack</h1>
+                            </span>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="eventUn">
-                    <h3>2017 - 2020</h3>
-                    <h3>Bac Pro Système Numérique option RISC</h3>
-                    <h4>Lycée polyvalent Georges-Brière à Murigny</h4>
-                    <p>Tout d'abord attiré par le réseau, j'ai suivi cette formation qui
-                        m'a permis d'aborder le monde du travail via plusieurs stages effectué
-                        en entreprise.<br />
-                        Cette formation m'a permis d'avoir une bonne base sur les réseaux.</p>
-                </div>
-                <div class="cube a">
-                    <div class="top"></div>
-                    <div>
-                        <span style="--i:0">
-                            <h1>Bac pro Système Numérique</h1>
-                        </span>
-                        <span style="--i:1">
-                            <h1>Bac pro Système Numérique</h1>
-                        </span>
-                        <span style="--i:2">
-                            <h1>Bac pro Système Numérique</h1>
-                        </span>
-                        <span style="--i:3">
-                            <h1>Bac pro Système Numérique</h1>
-                        </span>
-                    </div>
-                </div>
-                <div class="separe"></div>
-                <div class="eventDeux">
-                    <h3>2020 - 2023</h3>
-                    <h3>Bachelor développeur web full-stack</h3>
-                    <h4>Ecole supérieur My Digital School Lyon</h4>
-                    <p>Suite à un stage au cours duquel j'ai été initier
-                        aux bases du développement web, je me suis découvert une
-                        nouvelle passion.<br />
-                        C'est pourquoi j'ai effectué cette formation qui se rapprochait
-                        le plus de ce que l'on doit effectuer réellement en entreprise.
-                    </p>
-                </div>
-                <div class="cube b">
-                    <div class="top"></div>
-                    <div>
-                        <span style="--i:0">
-                            <h1>Bachelor développeur web full-stack</h1>
-                        </span>
-                        <span style="--i:1">
-                            <h1>Bachelor développeur web full-stack</h1>
-                        </span>
-                        <span style="--i:2">
-                            <h1>Bachelor développeur web full-stack</h1>
-                        </span>
-                        <span style="--i:3">
-                            <h1>Bachelor développeur web full-stack</h1>
-                        </span>
-                    </div>
-                </div>
             </div>
-
         </div>
-        <div class="separe"></div>
 
-        <div class="projectPage">
+        <div class="page-section" id="projectPage">
             <div style="text-align: center; color: #fff;">
                 <i id="4" class="fa-solid fa-folder-open fa-7x"></i>
                 <h2 class="title">Mes Projets</h2>
@@ -319,8 +328,10 @@
                 <div class="projectUn">
                     <h3>ProjetUn</h3>
                     <h3>Bachelor développeur web full-stack</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quae fuga praesentium facilis
-                        dignissimos! Minus doloribus eos consectetur. Similique quam iusto tempora repudiandae! Ducimus
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quae fuga praesentium
+                        facilis
+                        dignissimos! Minus doloribus eos consectetur. Similique quam iusto tempora repudiandae!
+                        Ducimus
                         nostrum nobis porro asperiores dicta assumenda!</p>
                 </div>
                 <div class="card aCard">
@@ -329,8 +340,10 @@
                     </div>
                     <div class="content">
                         <h3>HTML</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quae fuga praesentium facilis
-                            dignissimos! Minus doloribus eos consectetur. Similique quam iusto tempora repudiandae!
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quae fuga praesentium
+                            facilis
+                            dignissimos! Minus doloribus eos consectetur. Similique quam iusto tempora
+                            repudiandae!
                             Ducimus
                             nostrum nobis porro asperiores dicta assumenda!</p>
                         <button>Tester le projet</button>
@@ -342,8 +355,10 @@
                 <div class="projectUn">
                     <h3>ProjetDeux</h3>
                     <h3>Bachelor développeur web full-stack</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quae fuga praesentium facilis
-                        dignissimos! Minus doloribus eos consectetur. Similique quam iusto tempora repudiandae! Ducimus
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quae fuga praesentium
+                        facilis
+                        dignissimos! Minus doloribus eos consectetur. Similique quam iusto tempora repudiandae!
+                        Ducimus
                         nostrum nobis porro asperiores dicta assumenda!</p>
                 </div>
                 <div class="card bCard">
@@ -352,8 +367,10 @@
                     </div>
                     <div class="content">
                         <h3>CSS</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quae fuga praesentium facilis
-                            dignissimos! Minus doloribus eos consectetur. Similique quam iusto tempora repudiandae!
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quae fuga praesentium
+                            facilis
+                            dignissimos! Minus doloribus eos consectetur. Similique quam iusto tempora
+                            repudiandae!
                             Ducimus
                             nostrum nobis porro asperiores dicta assumenda!</p>
                         <button>Tester le projet</button>
@@ -364,11 +381,12 @@
             </div>
         </div>
 
-        <div id="expePage" style="padding-top: 5%;margin-top: 10%;">
+        <div class="page-section" id="expePage" style="padding-top: 5%;margin-top: 10%;">
             <div style="text-align: center;">
                 <i id="5" class="fa-solid fa-briefcase fa-7x"></i>
                 <h2 class="title">Mes expériences</h2>
             </div>
+            <div class="separe"></div>
 
         </div>
     </div>
@@ -452,6 +470,36 @@
         btn.style.marginTop = value * 1 + "px";
 
     })
+
+    // fonction pour activé le menu dans les sections 
+    $(document).ready(function () {
+        $('a[href*=#]').bind('click', function (e) {
+            e.preventDefault();
+
+            var target = $(this).attr("href");
+
+            $('html, body').stop().animate({
+                scrollTop: $(target).offset().top
+            }, 600, function () {
+                location.hash = target;
+            });
+
+            return false;
+        });
+    });
+
+    $(window).scroll(function () {
+        var scrollDistance = $(window).scrollTop();
+        $('.page-section').each(function (i) {
+            if ($(this).position().top <= scrollDistance) {
+                $('#nav-phone a.active').removeClass('active');
+                $('#nav-phone li.act').removeClass('act');
+                $('#nav-phone a').eq(i).addClass('active');
+                $('#nav-phone li').eq(i).addClass('act');
+            }
+        });
+    }).scroll();
+
 
 
     let mybutton = document.getElementById("myBtn");
