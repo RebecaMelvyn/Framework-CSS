@@ -421,9 +421,13 @@
                 <i class="fa-solid fa-briefcase fa-7x"></i>
                 <h2 class="title">Contact</h2>
             </div>
-            <div class="separe"></div>
-            <div class="separe"></div>
-            <div class="separe"></div>
+            <form method="post" action="contact-form-process.php">
+                <input type="text" name="Name" id="name" placeholder="nom :" required>
+                <input type="mail" name="Email" id="email" placeholder="mail :" required>
+                <textarea name="Message" id="message" placeholder="message :" rows="6" maxlength="3000"
+                    required></textarea>
+                <input type="submit">
+            </form>
             <div class="separe"></div>
         </div>
     </div>
