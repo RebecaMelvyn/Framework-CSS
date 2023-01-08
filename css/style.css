@@ -662,6 +662,23 @@ section #btn {
   display: inline-flex;
 }
 
+.expe {
+  display: inline-flex;
+  width: 80%;
+  margin-top: 10%;
+  padding-left: 10%;
+}
+.expe img {
+  width: 350px;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+.expe p {
+  margin-left: 10%;
+  margin-top: 3%;
+  width: 400px;
+}
+
 @media screen and (max-width: 426px) {
   #skil {
     display: block;
@@ -814,6 +831,23 @@ section #btn {
   }
   .sec h2 {
     font-size: 2rem;
+  }
+  .expe {
+    display: block;
+    width: 80%;
+    margin-top: 10%;
+    padding-left: 15%;
+  }
+  .expe img {
+    width: 200px;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+  .expe p {
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+    width: 300px;
   }
 }
 
